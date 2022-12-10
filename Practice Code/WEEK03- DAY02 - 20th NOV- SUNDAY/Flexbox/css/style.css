@@ -1,0 +1,18 @@
+body {
+    background-color: #242B2E;
+}
+
+.container {
+    /* display: flex; */
+    background-color: #6AC47E;
+    border: 2px solid #ffffff;
+}
+
+.boxes {
+    border: 2px solid #ffffff;
+    background-color: #6EC72D;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
