@@ -10,11 +10,12 @@
 <body class="box-border m-0 p-0">
 
     <!-- MAIN/CONTAINER  -->
-    <div class="main">
+    <div>
+        
         <!-- NAVIGATION BAR  -->
         <nav class="nav-bar flex space-between bg-[#2d2d32]">
             <ul class="flex justify-between items-center p-8px m-3">
-                <li><img src="./Assets/vscode-icon.png" alt="logo" class="w-7 ml-40 "></li> 
+                <li><img src="./Assets/VSCodeIcon.png" alt="logo" class="w-7 ml-40 "></li> 
                 <li class="ml-2 text-[#fefeff] font-normal text-2xl ">Visual Studio Code</li>
             </ul>
             <ul class="navigations flex space-between items-center gap-5 text-[#a0a1a2]">
@@ -36,59 +37,66 @@
             </div>
         </nav>
 
-        <!-- MAIN UPPER SECTION FOR FUTURE NOTIFICATION UPDATES -->
-        <div class="h-12 bg-[#25252B] flex justify-center items-center">
-            <p class="text-base text-[#d2d2d3]">
-                <a href="/" class=" text-blue-500 hover:underline">Version 1.73</a> is now available! Read about the new features and fixes from October.
-            </p>
-        </div>
-        
-        <!-- MAIN SECTION -->
-        <div class="flex justify-center items-center h-[43rem] bg-[#2C2C32] gap-14">
-            <div class="flex flex-col items-center -mt-44">
-                <h2 class="text-white text-6xl font-light">Code editing.</h2>
-                <h2 class="text-white text-6xl font-lg">Redefined.</h2>
-                <p class="text-[#a8a8aa] text-xl mt-3">Free. Built on open source. Runs everywhere.</p>
-                <div class="flex items-center justify-center mt-8">
-                    <button class="bg-[#0066b8] hover:bg-[#005BA4] w-64 h-[4.5rem] flex items-center justify-center gap-3 text-white text-lg font-medium whitespace-pre-line flex-col leading-3">Download for Windows
-                        <span class="font-light">Stable Build</span>
-                    </button>
-                    <button class="bg-[#0066b8] hover:bg-[#005BA4] w-12 h-[4.5rem] ml-0.5 flex items-center justify-center"><i><img class="" src="./Assets/DownArrow.png" alt=""></i></button>
-                </div>
-                <p class="bg-[#25252B] rounded-lg text-center mt-4 h-8 w-80 text-[#a8a8aa]">
-                    <a href="/" class="text-blue-500 hover:underline">Web</a>, 
-                    <a href="/" class="text-blue-500 hover:underline">Insiders edition</a>
-                    , or 
-                    <a href="" class="text-blue-500 hover:underline">other platforms</a>
+        <!-- MAIN UPPER SECTION FOR FUTURE NOTIFICATION UPDATES --> 
+        <div>
+            <div class="sticky top-5 left-2 ml-2 text-white text-m max-w-fit h-0">
+                <p>
+                    For Educational Purpose Only.!
                 </p>
-                <p class="text-[#a8a8aa] text-center mt-4 text-sm">By using VS Code, you agree to its <br><a href="/" class="text-blue-500 hover:underline">license and privacy statement.</a></p>
             </div>
-            <div>
-                <img class="w-[47rem]" src="./Assets/VS Code SS.png" alt="">
+            <div class="h-12 bg-[#25252B] flex justify-center items-center">
+                <p class="text-base text-[#d2d2d3]">
+                <a href="/" class=" text-blue-500 hover:underline">Version 1.73</a> is now available! Read about the new features and fixes from October.
+                </p>
+            </div>
+        <!-- MAIN SECTION -->
+            <div class="flex justify-center items-center h-[43rem] bg-[#2C2C32] gap-14">
+                <div class="flex flex-col items-center -mt-44">
+                    <h2 class="text-white text-6xl font-light">Code editing.</h2>
+                    <h2 class="text-white text-6xl font-lg">Redefined.</h2>
+                    <p class="text-[#a8a8aa] text-xl mt-3">Free. Built on open source. Runs everywhere.</p>
+                    <div class="flex items-center justify-center mt-8">
+                        <button class="bg-[#0066b8] hover:bg-[#005BA4] w-64 h-[4.5rem] flex items-center justify-center gap-3 text-white text-lg font-medium whitespace-pre-line flex-col leading-3">Download for Windows
+                            <span class="font-light">Stable Build</span>
+                        </button>
+                        <button class="bg-[#0066b8] hover:bg-[#005BA4] w-12 h-[4.5rem] ml-0.5 flex items-center justify-center"><i><img class="" src="./Assets/DownArrow.png" alt=""></i></button>
+                    </div>
+                    <p class="bg-[#25252B] rounded-lg text-center mt-4 h-8 w-80 text-[#a8a8aa]">
+                        <a href="/" class="text-blue-500 hover:underline">Web</a>, 
+                        <a href="/" class="text-blue-500 hover:underline">Insiders edition</a>
+                        , or 
+                        <a href="" class="text-blue-500 hover:underline">other platforms</a>
+                    </p>
+                    <p class="text-[#a8a8aa] text-center mt-4 text-sm">By using VS Code, you agree to its <br><a href="/" class="text-blue-500 hover:underline">license and privacy statement.</a></p>
+                </div>
+                <div>
+                    <img class="w-[47rem]" src="./Assets/VS Code SS.png" alt="">
+                </div>
+                
             </div>
         </div>
 
         <!-- ICONS SECTION -->
         <div class="flex justify-center items-center h-36">
-            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-[#2E3192] font-normal">
+            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-[#2E3192] hover:cursor-pointer font-normal">
                 <img class="w-14" src="./Assets/Intellisense_Icon.png" alt="IntelliSense Icon">
                 <p>IntelliSense</p>
             </div>
-            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-[#37B34A] font-normal">
+            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-[#37B34A] hover:cursor-pointer font-normal">
                 <img class="w-14" src="./Assets/Run and Debug Icon.png" alt="Run and Debug Icon">
                 <p>Run and Debug</p>
             </div>
-            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-[#F42534] font-normal">
+            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-[#F42534] hover:cursor-pointer font-normal">
                 <img class="w-14" src="./Assets/Git Icon.png" alt="Git fork Icon">
                 <p>Built-in Git</p>
             </div>
-            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-black font-normal">
+            <div class="w-80 h-full flex justify-center items-center flex-col gap-2 text-[#3D3D42] hover:bg-[#E3E3E3] text-2xl hover:text-[#8D3DAF] hover:cursor-pointer font-normal">
                 <img class="w-14" src="./Assets/Extensions Icon.png" alt="Extension Icon">
                 <p>Extensions</p>
             </div>
         </div>
-
-
+        
+        
         <!-- SLIDEBAR SECTION -->
         <div class="flex justify-center items-baseline p-14 pt-24 gap-5 bg-[#F5F5F5] h-[23rem] text-[#525252] font-normal text-lg">
             <div>
