@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', 'Poppins', 'san-serif';
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    margin: 3rem -1rem 2rem 5rem;
+
+}
+
+
+/**************************************** Nav Bar ****************************************/
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/********** Logo image **********/
+.navbar-container div img {
+    height: 45px;
+    margin-left: 2rem;
+}
+
+/********** Navigation Menu **********/
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.list-item::after {
+    content: '';
+    background-color: black;
+    display: block;
+    position: absolute;
+    transform-origin: bottom center;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+li:nth-child(1) {
+    order: 1;
+}
+li:nth-child(2) {
+    order: 3;
+}
+li:nth-child(3) {
+    order: 2;
+}
+li:nth-child(4) {
+    order: 4;
+}
+li:nth-child(5) {
+    order: 5;
+}
+.list-item {
+    position: relative;
+}
+.list-item:hover::after {
+    width: 70%;
+    left: 17%;
+}
+.list-item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform .2s ease-in-out;
+}
+
+/********** Search Button **********/
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 10rem;
+}
+.nav-button {
+    border: 2px solid #000000;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding: 3px 40px;
+    border-radius: 10px;
+    font-weight: 300;
+}
+.search-icon svg {
+    width: 1.5rem;
+}
+.nav-button:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform .2s ease-in-out;
+}
+.search-icon svg:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: transform .2s ease-in-out;
+}
+
+
+/**************************************** Left Side ****************************************/
+/*********** Person Hero image ***********/
+.hero-container>div>img {
+    position: absolute;
+    top: 195px;
+    left: 113px;
+    width: 435px;
+}
+/*********** Square Grid Pattarn ***********/
+.square img {
+    position: absolute;
+    width: 22rem;
+    top: 450px;
+    left: 260px;
+}
+
+
+/**************************************** Right Side ****************************************/
+.hero-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 100px 0px 600px;
+}
+.hero-heading {
+    font-size: 57px;
+    margin-left: 50px;
+    margin-top: 32px;
+}
+.hero-description {
+    margin: 47px 80px 0px 120px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #575757;
+}
+.hero-container-right div button {
+    margin-top: 6rem;
+}
+
+/********** E-mail Address Button **********/
+.button-email {
+    margin-right: 7px;
+    height: 35px;
+    width: 218px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 21px;
+    border: 3px solid #4c4c4c;
+    color: #5b5b5b;
+    cursor: pointer;
+}
+.button-email:hover {
+    background-color: #0b0c0e;
+    color: #fff;
+}
+
+/********** Join Now Button **********/
+.button-join {
+    margin-left: 7px;
+    height: 33px;
+    width: 130px;
+    border-radius: 7px;
+    background-color: #0b0c0e;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.button-join:hover {
+    background-color: #fff;
+    color: #5b5b5b;
+    border: 3px solid #4c4c4c;
+}
+
+/********** Contact us **********/
+.contact-heading {
+    margin-top: 104px;
+    margin-left: 44px;
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-weight: 500;
+    color: #515151;
+}
+
+/********** Social Media Icons **********/
+.icons {
+    margin-top: 12px;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 20px;
+}
+.icons span img {
+    width: 35px;
+}
+
+.icons span img {
+    width: 35px;
+    cursor: pointer;
+}
+
+
+/**************************************** Other icons ****************************************/
+.globe img {
+    position: absolute;
+    width: 3.75rem;
+    top: 150px;
+    left: calc(100vw/2);
+}
+
+.hero-container>span:nth-child(2) img {
+    position: absolute;
+    width: 3.75rem;
+    top: 200px;
+    right: 130px;
+}
+
+.hero-container>span:nth-of-type(3) img {
+    position: relative;
+    width: 40px;
+    top: 600px;
+    left: 680px;
+}
+
+
