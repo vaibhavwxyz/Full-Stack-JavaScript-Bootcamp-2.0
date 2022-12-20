@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Credit Card Landing Page</title>
 </head>
-<body>
-    
+<body class="bg-[#151515] font-[Roboto]">
+    <!-- NAV BAR -->
+    <nav class="relative container mx-auto p-6">
+        <!-- FLEX CONTAINER  -->
+        <div class="flex item-center justify-between">
+            <!-- LOGO  -->
+            <div class="pt-2">
+                <img src="./Assets/Icons/Logo.svg" alt="">
+            </div>
+            <!-- NAVIGATION MENU -->
+            <div class="space-x-6 items-center md:flex">
+                <a href="#" class="text-slate-200 hover:text-slate-400">Home</a>
+                <a href="#" class="text-slate-200 hover:text-slate-400">Features</a>
+                <a href="#" class="text-slate-200 hover:text-slate-400">Pricing</a>
+                <a href="#" class="text-slate-200 hover:text-slate-400">About us</a>
+            </div>
+            <!-- LANGUAGE AND CONTACT US  -->
+            <div class="flex items-center">
+                <span class="text-white mr-5 after:content-[''] after:inline-block after:w-0 after:h-0 after:border-x-[3px] after:border-t-[6px] after:border-solid after:border-x-transparent after:border-t-gray-200 after:ml-3 after:mb-0.5 cursor-pointer">Eng</span>
+                <img src="./Assets/Icons/btn-pink-bg.svg" alt="btn-ping-bg">
+                <a href="#" class="text-white relative -left-5">Contact Us</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
 </body>
 </html>
