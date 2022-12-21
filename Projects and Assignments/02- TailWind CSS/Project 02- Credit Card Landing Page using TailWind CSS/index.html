@@ -9,9 +9,9 @@
     <script src="https://kit.fontawesome.com/b57e52aa03.js" crossorigin="anonymous"></script>
     <title>Credit Card Landing Page</title>
 </head>
-<body class="bg-[#151515] font-[Roboto]">
+<body class="bg-[#151515] font-[Roboto] overflow-x-hidden">
     <!-- NAV BAR -->
-    <nav class="relative container mx-auto p-6">
+    <nav class="relative container mx-auto px-20 pt-10">
         <!-- FLEX CONTAINER  -->
         <div class="flex item-center justify-between">
             <!-- LOGO  -->
@@ -35,41 +35,58 @@
     </nav>
 
     <!-- HERO SECTION  -->
-    <section class="container mx-auto relative">
-        <div class="flex ">
+    <section class="container mx-auto relative pt-24 pl-20">
+        <div class="flex flex-col gap-y-16">
             <!-- HEADING -->
-            <h1 class="text-white">Simplify All Transactions in <span class="text-[#f637ec]">One Card</span></h1>
-            <p>
+            <h1 class="text-white text-8xl max-w-[1100px] leading-[7rem]">Simplify All Transactions in <span class="text-[#f637ec] font-bold">One Card</span></h1>
+            <p class="text-[#a3a3a3] text-2xl max-w-2xl">
                 Hurry up and join now, with this you can manage your daily finances easily and safely.
             </p>
-            <div>
-                <img src="./Assets/Icons/btn-pink-bg.svg" alt="btn-pink-bg">
-                <a href="#">GET STARTED</a>
-                <img src="./Assets/Icons/RightArrow.svg" alt="right-arrow">
+            <div class="flex flex-row">
+                <img src="./Assets/Icons/btn-pink-bg.svg" class="w-20" alt="btn-pink-bg">
+                <a href="#" class="text-white text-3xl relative right-12">GET STARTED</a>
+                <img src="./Assets/Icons/RightArrow.svg" class="relative right-10" alt="right-arrow">
             </div>
             <!-- EXPERIENCE SECTION  -->
-            <div>
-                <p>42K</p>
+            <div class="flex flex-row items-center">
+                <p class="text-white text-6xl font-bold">42K</p>
                 <i class="fa-solid fa-plus fa-lg md:hidden" style="color: #f637ec;"></i>
                 <i class="fa-solid fa-plus fa-2x hidden md:inline-block" style="color: #f637ec;"></i>
-                <p>Happy Active User</p>
+                <p class="text-white text-2xl ml-5 max-w-[140px]">Happy Active User</p>
 
                 <img src="./Assets/Icons/Vector 402.svg" alt="vector">
 
-                <p>12K</p>
+                <p class="text-white text-6xl font-bold ml-5">12K</p>
                 <i class="fa-solid fa-plus fa-lg md:hidden" style="color: #f637ec;"></i>
                 <i class="fa-solid fa-plus fa-2x hidden md:inline-block" style="color: #f637ec;"></i>
-                <p>Years Experience</p>
+                <p class="text-white text-2xl ml-5 max-w-[140px]">Years Experience</p>
             </div>
         </div>
         <!-- CREDIT CARD IMAGES -->
         <div>
-            <img src="./Assets/Photos/backCards.png" alt="back-card">
-            <img src="./Assets/Photos/frontCards.png" alt="front-card">
+            <img src="./Assets/Photos/backCards.png" class="absolute -top-20 right-0 -z-20 overflow-x-hidden" alt="back-card">
+            <img src="./Assets/Photos/frontCards.png" class="absolute top-0 right-[-200px] -z-10 overflow-x-hidden" alt="front-card">
         </div>
     </section>
 
+    <!-- LOGO SECTION  -->
+    <section class="bg-[#292929] mt-48">
+        <div class="flex justify-center items-center h-60 gap-20">
+            <img src="./Assets/Icons/Logo.svg" class="md:w-44" alt="logo">
+            <img src="./Assets/Icons/Logo.svg" class="md:w-44" alt="logo">
+            <img src="./Assets/Icons/Logo.svg" class="md:w-44" alt="logo">
+            <img src="./Assets/Icons/Logo.svg" class="md:w-44" alt="logo">
+            <img src="./Assets/Icons/Logo.svg" class="md:w-44" alt="logo">
+        </div>
+    </section>
 
+    <!-- MIDDLE SECTION  -->
+    <section class="mx-auto p-20">
+        <div class="h-96 flex flex-row justify-center items-center">
+            <h2 class="text-white w-1/2 text-7xl leading-[6rem]">The best payment service for <span class="text-[#f637ec]">your transactions.</span></h2>
+            <p class="text-[#a3a3a3] w-1/2">The following are the services we provide to users, with the  services we maximize it is hoped tht users are satisfied with what we provide.</p>
+        </div>
+    </section>
 
 
 </body>
