@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Assets/Photos/VCards.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b57e52aa03.js" crossorigin="anonymous"></script>
     <title>Credit Card Landing Page</title>
 </head>
 <body class="bg-[#151515] font-[Roboto] overflow-x-hidden">
     <!-- NAV BAR -->
-    <nav class="relative container mx-auto px-20 pt-10">
+    <nav class="relative container mx-auto px-8 pt-4 md:pt-10 md:px-20">
         <!-- FLEX CONTAINER  -->
         <div class="flex item-center justify-between">
             <!-- LOGO  -->
             <div class="pt-2">
-                <img src="./Assets/Icons/Logo.svg" alt="">
+                <img src="./Assets/Icons/Logo.svg" class="w-[50%] md:w-[100%]" alt="logo">
             </div>
             <!-- NAVIGATION MENU -->
-            <div class="gap-x-12 items-center text-lg md:flex">
+            <div class="hidden gap-x-12 items-center text-lg md:flex">
                 <a href="#" class="text-slate-200 hover:text-slate-400 hover:text-fuchsia-500 hover:scale-105 hover:cursor-pointer">Home</a>
                 <a href="#" class="text-slate-200 hover:text-slate-400 hover:text-fuchsia-500 hover:scale-105 hover:cursor-pointer">Features</a>
                 <a href="#" class="text-slate-200 hover:text-slate-400 hover:text-fuchsia-500 hover:scale-105 hover:cursor-pointer">Pricing</a>
                 <a href="#" class="text-slate-200 hover:text-slate-400 hover:text-fuchsia-500 hover:scale-105 hover:cursor-pointer">About us</a>
             </div>
             <!-- LANGUAGE AND CONTACT US  -->
-            <div class="flex items-center text-lg">
+            <div class="hidden md:flex items-center text-base md:text-lg">
                 <span class="text-white mr-5 after:content-[''] after:inline-block after:w-0 after:h-0 after:border-x-[3px] after:border-t-[6px] after:border-solid after:border-x-transparent after:border-t-gray-200 after:ml-3 after:mb-0.5 cursor-pointer">Eng</span>
                 <img src="./Assets/Icons/btn-pink-bg.svg" alt="btn-ping-bg">
                 <a href="#" class="text-white relative -left-5 hover:scale-95 hover:cursor-pointer">Contact Us</a>
@@ -35,10 +36,10 @@
     </nav>
 
     <!-- HERO SECTION  -->
-    <section class="container mx-auto relative pt-24 pl-20">
+    <section class="container mx-auto relative pt-16 pl-8 md:pt-24 md:pl-20">
         <div class="flex flex-col gap-y-16">
             <!-- HEADING -->
-            <h1 class="text-white text-8xl max-w-[1100px] leading-[7rem]">Simplify All Transactions in <span class="text-[#f637ec] font-bold">One Card</span></h1>
+            <h1 class="text-white text-2xl md:text-8xl md:max-w-[1100px] md:leading-[7rem]">Simplify All Transactions in <span class="text-[#f637ec] font-bold">One Card</span></h1>
             <p class="text-[#a3a3a3] text-2xl max-w-2xl">
                 Hurry up and join now, with this you can manage your daily finances easily and safely.
             </p>
