@@ -8,23 +8,57 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap'); </style>
     <title>Hosting Site</title>
 </head>
-<body class="bg-[#111010]">
+<body class="bg-[#111010] font-[Montserrat]">
+
+    <!-- NAV BAR -->
     <nav>
         <div class="container mx-auto px-20 py-10 flex items-center justify-between">
+            <!-- LOGO -->
             <div>
                 <img src="./assets/Logo.svg" alt="logo">
             </div>
+            <!-- NAVIGATION MENU -->
             <div class="hidden space-x-12 md:flex">
-                <a href="#" class="text-slate-400 font-[Montserrat] font-semibold hover:text-slate-100">Hosting</a>
-                <a href="#" class="text-slate-400 font-[Montserrat] font-semibold hover:text-slate-100">Domain</a>
-                <a href="#" class="text-slate-400 font-[Montserrat] font-semibold hover:text-slate-100">Feature</a>
-                <a href="#" class="text-slate-400 font-[Montserrat] font-semibold hover:text-slate-100">Support</a>
-                <a href="#" class="text-slate-400 font-[Montserrat] font-semibold hover:text-slate-100">Community</a>
+                <a href="#" class="text-slate-400 font-semibold hover:text-slate-100">Hosting</a>
+                <a href="#" class="text-slate-400 font-semibold hover:text-slate-100">Domain</a>
+                <a href="#" class="text-slate-400 font-semibold hover:text-slate-100">Feature</a>
+                <a href="#" class="text-slate-400 font-semibold hover:text-slate-100">Support</a>
+                <a href="#" class="text-slate-400 font-semibold hover:text-slate-100">Community</a>
             </div>
+            <!-- LOGIN BUTTON -->
             <div>
-                <a href="#" class="px-8 py-3 bg-[#0c8bfd] font-[Montserrat] font-semibold text-white rounded-full hover:text-slate-100">Login</a>
+                <a href="#" class="px-8 py-3 bg-[#0c8bfd] font-semibold text-white rounded-full hover:text-slate-100">Login</a>
             </div>
         </div>
     </nav>
+
+    <!-- HERO SECTION -->
+    <section>
+        <!-- HERO CONTAINER -->
+        <div class="container flex items-center mx-auto px-20 py-10">
+            <!-- HEADING, PARAGRAPH & BUTTONS -->
+            <div class="flex flex-col space-y-12 items-center w-1/2">
+                <!-- HEADING -->
+                <h1 class="text-white font-bold">
+                    The best and <span class="text-[#0c8bfd] italic">cheapest</span> hosting for your website
+                </h1>
+                <!-- PARAGRAPH -->
+                <p class="text-slate-400 font-normal">
+                    Hosting your website here is easy, access is fast, server security is very well maintained, and of course supported by reliable servers.
+                </p>
+                <!-- BUTTONS -->
+                <div>
+                    <a href="#" class="bg-[#0c8bfd] text-white px-8 py-3 rounded-full">Get Started</a>
+                    <a href="#" class="text-white">Try Start Free</a>
+                </div>
+            </div>
+            <!-- ILLUSTRATIONS -->
+            <div class="w-1/2">
+                <img src="./assets/Illustrations/Group 238502.svg" alt="illustration">
+            </div>
+        </div>
+    </section>
+
+
 </body>
 </html>
