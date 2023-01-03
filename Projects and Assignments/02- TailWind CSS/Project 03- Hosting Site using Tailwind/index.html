@@ -11,11 +11,12 @@
 <body class="bg-[#111010] font-[Montserrat]">
 
     <!-- NAV BAR -->
-    <nav>
-        <div class="container mx-auto items-center justify-between px-6 py-4 md:flex md:px-20 md:py-10">
+    <nav class="relative container mx-auto p-6">
+        <!-- FLEX CONTAINER  -->
+        <div class="flex items-center justify-between">
             <!-- LOGO -->
             <div>
-                <img src="./assets/Logo.svg" class="w-[25%] md:w-[100%]" alt="logo">
+                <img src="./assets/Logo.svg" class="max-w-[50%] md:max-w-[100%]" alt="logo">
             </div>
             <!-- NAVIGATION MENU -->
             <div class="hidden space-x-12 md:flex">
@@ -35,7 +36,7 @@
     <!-- HERO SECTION -->
     <section>
         <!-- HERO CONTAINER -->
-        <div class="container flex items-center py-10 mx-auto px-6 py-4 md:px-20 md:py-10">
+        <div class="container flex flex-col items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row md:px-20 md:py-10">
             <!-- HEADING, PARAGRAPH & BUTTONS -->
             <div class="flex flex-col items-center md:space-y-12 md:w-1/2">
                 <!-- HEADING -->
@@ -53,7 +54,7 @@
                 </div>
             </div>
             <!-- ILLUSTRATIONS -->
-            <div class="z-[-2] absolute mx-auto top-28 opacity-10 md:opacity-100 md:static md:w-1/2">
+            <div class="z-[-2] px-10 py-10 absolute top-28 opacity-10 md:opacity-100 md:static md:w-1/2">
                 <img src="./assets/Illustrations/Group 238502.svg" alt="illustration">
             </div>
         </div>
