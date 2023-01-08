@@ -84,17 +84,17 @@
             </p>
             <!-- CARDS -->
             <div class="flex flex-col items-baseline space-between space-y-10 px-10 md:relative md:top-12 md:mx-auto md:flex-row md:space-x-14 md:px-24">
-                <div class="flex flex-col items-center border-2 border-gray-500 space-y-5 pt-10 rounded-3xl md:w-[22rem] md:h-[23rem] md:cursor-pointer hover:bg-[#111010] md:hover:text-white hover:border-0 hover:drop-shadow-2xl ease-in-out duration-500 md:hover:-translate-y-12 drop-shadow-md">
+                <div class="flex flex-col items-center border-2 border-gray-500 space-y-5 pt-10 rounded-3xl hover:text-white md:w-[22rem] md:h-[23rem] md:cursor-pointer hover:bg-[#111010]  hover:border-0 hover:drop-shadow-2xl ease-in-out duration-500 md:hover:-translate-y-12 drop-shadow-md">
                     <img src="./assets/Icons/fast.svg" alt="fast">
                     <h3 class="font-bold text-2xl">Faster hosting process</h3>
                     <p class="text-[#666666] text-center pb-10 px-10">We can speed up the creation of your website, which is made directly by the experts.</p>
                 </div>
-                <div class="flex flex-col items-center border-2 border-gray-500 space-y-5 pt-10 rounded-3xl md:w-[22rem] md:h-[23rem] md:cursor-pointer hover:bg-[#111010] md:hover:text-white hover:border-0 hover:drop-shadow-2xl ease-in duration-500 md:hover:-translate-y-12 drop-shadow-md">
+                <div class="flex flex-col items-center border-2 border-gray-500 space-y-5 pt-10 rounded-3xl hover:text-white md:w-[22rem] md:h-[23rem] md:cursor-pointer hover:bg-[#111010] hover:border-0 hover:drop-shadow-2xl ease-in duration-500 md:hover:-translate-y-12 drop-shadow-md">
                     <img src="./assets/Icons/signal.svg" alt="signal">
                     <h3 class="font-bold text-2xl">Speed to access faster</h3>
                     <p class="text-[#666666] text-center pb-10 px-10">Excellent network infrastructure and hardware to support fast and stable access.</p>
                 </div>
-                <div class="flex flex-col items-center border-2 border-gray-500 space-y-5 pt-10 rounded-3xl md:w-[22rem] md:h-[23rem] md:cursor-pointer hover:bg-[#111010] md:hover:text-white hover:border-0 hover:drop-shadow-2xl ease-in duration-500 md:hover:-translate-y-12 drop-shadow-md">
+                <div class="flex flex-col items-center border-2 border-gray-500 space-y-5 pt-10 rounded-3xl hover:text-white md:w-[22rem] md:h-[23rem] md:cursor-pointer hover:bg-[#111010] hover:border-0 hover:drop-shadow-2xl ease-in duration-500 md:hover:-translate-y-12 drop-shadow-md">
                     <img src="./assets/Icons/heart.svg" alt="heart">
                     <h3 class="font-bold text-2xl">Faster service 24/7</h3>
                     <p class="text-[#666666] text-center pb-10 px-10">We have a response time of less than 150 seconds, available 24 hours a day.</p>
@@ -172,7 +172,14 @@
 
     <!-- PRICING CARD SECTION -->
     <section>
-        <div class="text-white mx-auto max-w-7xl grid gap-12 lg:grid-cols-3 lg:gap-8 py-24 px-4 sm:px-6 lg:px-8">
+        <!-- HEADING -->
+        <div class="p-10 flex justify-between -mb-5 md:px-32 md:mt-10 ">
+            <img class="mt-6 md:mt-16 w-[10%] md:w-auto" src="./Assets/Icons/arrow-left.svg" alt="arrow">
+            <h3 class="text-white text-center text-xl md:text-6xl font-semibold">Hosting your website with the services we provide</h3>
+            <img class="mt-6 md:mt-16 w-[10%] md:w-auto" src="./Assets/Icons/arrow-right.svg" alt="arrow">
+        </div>
+        <!-- PRICE CARDS -->
+        <div class="text-white mx-auto max-w-7xl grid gap-12 py-12 lg:grid-cols-3 lg:gap-8 lg:py-24 px-4 sm:px-6 lg:px-8">
             <!-- REGULAR PLAN -->
             <div class="flex flex-col gap-8 text-black px-4 py-12 shadow-lg bg-white rounded-3xl">
                 <h3 class="text-4xl mb-5 font-bold leading-5">Regular</h3>
@@ -209,7 +216,7 @@
                         <p>1 Domain</p>
                     </li>
                 </ul>
-                <a href="#" class="bg-[#0c8bfd] text-white block mt-8 text-lg font-semibold rounded-full px-6 py-4 transition-all text-center hover:shadow-2xl hover:scale-95">Select</a>
+                <a href="#" class="bg-[#0c8bfd] text-white block mt-8 text-lg font-semibold rounded-full px-6 py-4 transition-all text-center hover:shadow-2xl hover:scale-95 hover:outline-2 hover:outline hover:outline-[#0c8bfd] hover:bg-white hover:text-[#0c8bfd]">Select</a>
             </div>
             <!-- STANDARD PLAN -->
             <div class="flex flex-col gap-8 px-4 py-12 shadow-lg relative rounded-3xl bg-[#0c8bfd]">
@@ -248,7 +255,7 @@
                         <p>Unlimited Addon Domain</p>
                     </li>
                 </ul>
-                <a href="#" class="bg-white text-[#0c8bfd] block mt-8 text-lg font-semibold rounded-full px-6 py-4 transition-all text-center hover:shadow-2xl hover:scale-95">Select</a>
+                <a href="#" class="bg-white text-[#0c8bfd] block mt-8 text-lg font-semibold rounded-full px-6 py-4 transition-all text-center hover:shadow-2xl hover:scale-95 hover:outline-2 hover:outline hover:outline-white hover:bg-[#0c8bfd] hover:text-white">Select</a>
             </div>
             <!-- PREMIUM PLAN -->
             <div class="flex flex-col gap-8  text-black px-4 py-12 shadow-lg bg-white rounded-3xl">
@@ -286,11 +293,206 @@
                         <p>Free Domain</p>
                     </li>
                 </ul>
-                <a href="#" class="bg-[#0c8bfd] text-white block mt-8 text-lg font-semibold rounded-full px-6 py-4 transition-all text-center hover:shadow-2xl hover:scale-95">Select</a>
+                <a href="#" class="bg-[#0c8bfd] text-white block mt-8 text-lg font-semibold rounded-full px-6 py-4 transition-all text-center hover:shadow-2xl hover:scale-95 hover:outline-2 hover:outline hover:outline-[#0c8bfd] hover:bg-white hover:text-[#0c8bfd]">Select</a>
             </div>
         </div>
     </section>
 
+    <!-- CUSTOMER REVIEW SECTION -->
+    <section class="bg-white mx-auto">
+        <div class="p-5 md:p-20 md:ml-16">
+          <div class="py-10 space-y-5 md:flex md:items-start md:pb-20 md:pt-16">
+            <h1 class="text-black text-center font-bold text-4xl md:text-start md:flex-1 md:text-6xl md:leading-snug">What do our customers say?</h1>
+            <p class="text-[#808080] text-xl px-3 text-center leading-tight md:text-start md:flex-1 md:font-medium md:px-32">
+              You will definitely be surprised how our customers comment on what
+              we do so well. because we really prioritize the satisfaction of
+              our customers.
+            </p>
+          </div>
+          <!-- REVIEW CARDS -->
+          <div class="flex flex-nowrap overflow-x-scroll scrolling-touch items-start gap-x-10">
+            <div class="max-w-xs border border-2 border-[#808080] rounded-3xl flex-none p-8 flex flex-col gap-5 bg-black md:gap-10 md:max-w-3xl">
+              <div class="flex gap-1">
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg"
+                  alt=""
+                />
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-white font-bold">Slamet Wijaya</p>
+                <p class="text-[#b3b3b3] font-medium">CEO Tokped</p>
+              </div>
+              <div>
+                <p class="text-white md:text-2xl">
+                  Web hosting that I highly recommend because the service
+                  provided is very good, hosting is fast so with a pretty
+                  fantastic speed.
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="max-w-xs border border-2 border-[#808080] rounded-3xl flex-none p-8 flex flex-col gap-5 md:gap-10 md:max-w-3xl">
+              <div class="flex gap-1">
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg"
+                  alt=""
+                />
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-black font-bold">Turman Tasim</p>
+                <p class="text-[#666666] font-medium">CEO Sickuy</p>
+              </div>
+              <div>
+                <p class="text-black md:text-2xl">
+                  I am very satisfied with the web hosting here, because the
+                  service is very good, the hosting is fast so the speed is
+                  quite fantastic.
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="max-w-xs border border-2 border-[#808080] rounded-3xl flex-none p-8 flex flex-col gap-5 bg-black md:gap-10 md:max-w-3xl">
+              <div class="flex gap-1">
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg"
+                  alt=""
+                />
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="text-white font-bold">Slamet Wijaya</p>
+                <p class="text-[#b3b3b3] font-medium">CEO Tokped</p>
+              </div>
+              <div>
+                <p class="text-white md:text-2xl">
+                  Web hosting that I highly recommend because the service
+                  provided is very good, hosting is fast so with a pretty
+                  fantastic speed.
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="max-w-xs border border-2 border-[#808080] rounded-3xl flex-none p-8 flex flex-col gap-5 bg-white md:gap-10 md:max-w-3xl">
+              <div class="flex gap-1">
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector.svg"
+                  alt="vector"
+                />
+                <img
+                  src="./assets/Icons/vuesax/bulk/vuesax/bulk/Vector-1.svg"
+                  alt="vector"
+                />
+              </div>
+              <div>
+                <p class="text-black font-bold">Turman Tasim</p>
+                <p class="text-[#666666] font-medium">CEO Sickuy</p>
+              </div>
+              <div>
+                <p class="text-black md:text-2xl">
+                  I am very satisfied with the web hosting here, because the
+                  service is very good, the hosting is fast so the speed is
+                  quite fantastic.
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+                <img src="./assets/Icons/Star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM SECTION -->
+      <section class="px-10 md:px-20 pt-10 md:pt-20">
+        <h1 class="text-white text-center font-bold text-xl md:text-center mx-auto md:text-5xl md:max-w-6xl md:px-20 md:leading-[120%]">
+            Sign Up now for as much hosting and domain as you want for $20.99/year
+        </h1>
+        <form action="" class="md:flex md:justify-between bg-[#292828] rounded-3xl px-4 py-6 md:py-12 mt-10 md:mt-20 drop-shadow-lg md:space-x-5">
+            <input type="text" placeholder="Name" class="w-full md:w-[28%] px-2 md:px-4 py-2 md:py-5 mt-2 md:mt-0 rounded-full bg-[#3e3d3d] outline-none text-sm md:text-lg text-gray-300 drop-shadow-sm">
+            <input type="email" name="E-mail" id="" placeholder="E-mail Address" class="w-full md:w-[28%] px-2 md:px-4 py-2 md:py-5 mt-2 md:mt-0 outline-none rounded-full bg-[#3e3d3d] md:text-lg text-sm text-gray-300 drop-shadow-sm">
+            <input type="password" name="" id="" placeholder="Password" class="w-full md:w-[28%] px-2 md:px-4 py-2 md:py-5 mt-2 md:mt-0 rounded-full outline-none bg-[#3e3d3d] md:text-lg text-sm text-gray-300 drop-shadow-sm">
+            <div>
+                <button class="bg-[#0c8bfd] rounded-full text-sm py-2 md:text-lg text-[#d4eafe] font-semibold duration-500 ease-in-out hover:text-slate-100 hover:text-[#0c8bfd] hover:bg-[#e9f5ff] md:px-10 w-full md:w-auto mt-5 md:py-5 md:px-10 md:mt-0">
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="px-10 md:px-20 py-6 md:pb-6 ">
+        <div class="border-y border-[#3e3d3d] grid grid-cols-2 md:grid-cols-4 gap-x-20 gap-y-10 md:gap-36 md:pl-10 py-10 md:py-14">
+
+            <ul class="text-[#c6c6c6] text-xs"> 
+                <h3 class="text-[#e1e1e1] font-medium mb-3 md:mb-5 text-base cursor-pointer hover:text-white">Company</h3>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">About us</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Contact us</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Carier</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Blog</li>
+            </ul>
+
+            <ul class="text-[#c6c6c6] text-xs">
+                <h3 class="text-[#e1e1e1] font-medium mb-3 md:mb-5 text-base cursor-pointer hover:text-white">Features</h3>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Domain</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Hosting</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">WordPress</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Web Security</li>
+            </ul>
+
+            <ul class="text-[#c6c6c6] text-xs">
+                <h3 class="text-[#e1e1e1] font-medium mb-3 md:mb-5 text-base cursor-pointer hover:text-white">Help</h3>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Payment method</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Knowledgebase</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Tutorials</li>
+            </ul>
+
+            <ul class="text-[#c6c6c6] text-xs">
+                <h3 class="text-[#e1e1e1] font-medium mb-3 md:mb-5 text-base cursor-pointer hover:text-white">Social Media</h3>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Instagram</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Twitter</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">Facebook</li>
+                <li class="py-1 transition-all ease-in-out duration-300 hover:text-white md:cursor-pointer">YouTube</li>
+            </ul>
+        </div>
+        <img class="pt-3 md:pt-6 w-20 md:w-[10%]"
+        src="./Assets/Logo.svg" alt="logo">
+    </footer>
 
 
 </body>
