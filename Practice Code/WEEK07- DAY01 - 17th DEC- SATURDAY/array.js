@@ -90,10 +90,10 @@ let price=[2000,6000,7000,10000,3500,12000,6953,71582,9600]
 let discount = price.filter(n => n<=10000)
 console.log(discount);
 
-// 19. for in loop
-let names = ["vaibhav", "shinde", "prashant", "ambhore"]
+// 19. for of loop
+let namesUpp = ["vaibhav", "shinde", "prashant", "ambhore"]
 let uNames = [];
-for(let x of names){
-    uNames.push(names.toUpperCase())
+for (let x of namesUpp) {
+    uNames.push(x.toUpperCase())
 }
 console.log(uNames);
