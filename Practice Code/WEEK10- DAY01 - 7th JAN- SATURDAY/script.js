@@ -83,4 +83,4 @@ const objects = {
 console.log("this is printPen: ", objects.printPen());
 console.log("this is printNotebook: ", objects.printNotebook());
 
-console.log(objects.sort().search().print()); 
+console.log(objects.sort().search().print());
