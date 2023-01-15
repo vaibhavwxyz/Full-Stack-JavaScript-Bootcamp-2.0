@@ -9,7 +9,9 @@
     <title>Gaming Landing Page</title>
 </head>
 <body>
-    <section class="w-full max-h-screen bg-no-repeat bg-cover bg-top" style="background-image: url(./Assets/Photos/futuristic-bg.png);">
+    <section class="relative">
+        <!-- BACKGROUND IMAGE -->
+        <div class="absolute -z-10 w-full h-[100vh] bg-no-repeat bg-cover bg-top" style="background-image: url(./Assets/Photos/futuristic-bg.png);"></div>
         <!-- NAV-BAR -->
         <nav class="bg-transparent relative container mx-auto px-5 pt-5 md:pt-10 md:px-20">
             <!-- FLEX CONTAINER -->
@@ -36,25 +38,27 @@
         </nav>
 
         <!-- HERO CONTAINER -->
-        <div class="px-5">
+        <div class="px-5 my-12 flex flex-col gap-10">
             <!-- LEFT CONTAINER -->
-            <div>
-                <h1 class="text-white font-bold">Play Game Everytime Always Be Winner And Strong</h1>
+            <div class="flex flex-col gap-8">
+                <h1 class="text-white font-bold text-3xl leading-snug">Play Game Everytime Always Be Winner And Strong</h1>
                 <p class="text-white opacity-60">Improve your gaming skills by playing games that are currently popular so that you don't go out of style improve skills</p>
                 <!-- ACTION BUTTONS -->
-                <div>
-                    <a href="#">Get started</a>
-                    <a href="#">Learn more</a>
+                <div class="flex flex-row items-center mx-auto gap-5">
+                    <a href="#" class="text-white font-semibold bg-[#f4694e] px-10 py-4">Get started</a>
+                    <a href="#" class="text-white font-semibold outline outline-2 outline-white px-10 py-4">Learn more</a>
                 </div>
             </div>
             <!-- RIGHT CONTAINER -->
-            <div>
-                <img src="./Assets/Icons/playButton.svg" alt="play-button">
-            </div>
-            <div>
-                <img src="./Assets/Icons/dash.svg" alt="dash">
-                <p class="text-white">The King Of Terania And Last Seasion XXIV</p>
-                <img src="./Assets/Icons/rightArrow.svg" alt="right-arrow">
+            <div class="relative flex flex-col gap-8">
+                <div class="mx-auto">
+                    <img class="w-28" src="./Assets/Icons/playButton.svg" alt="play-button">
+                </div>
+                <div class="flex items-center gap-3 relative">
+                    <img src="./Assets/Icons/dash.svg" alt="dash">
+                    <p class="text-white text-2xl font-medium">The King Of Terania And Last Seasion XXIV</p>
+                    <img src="./Assets/Icons/rightArrow.svg" alt="right-arrow">
+                </div>
             </div>
         </div>
 
