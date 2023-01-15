@@ -9,29 +9,58 @@
     <title>Gaming Landing Page</title>
 </head>
 <body>
-    <!-- NAV-BAR -->
-    <nav class="relative container mx-auto px-10 pt-5 md:pt-10 md:px-20">
-        <!-- FLEX CONTAINER -->
-        <div class="flex items-center justify-between">
-            <div class="md:flex items-center justify-between space-x-32">
-                <img class="max-w-[75%] md:max-w-[100%]" src="./Assets/Icons/Logo.svg" alt="logo">
-                <!-- NAVIGATION MENU -->
-                <div class="hidden space-x-12 md:flex">
-                    <a href="#">Home</a>
-                    <a href="#">Categories</a>
-                    <a href="#">How it work</a>
-                    <a href="#">Pricing</a>
+    <section class="w-full max-h-screen bg-no-repeat bg-cover bg-top" style="background-image: url(./Assets/Photos/futuristic-bg.png);">
+        <!-- NAV-BAR -->
+        <nav class="bg-transparent relative container mx-auto px-5 pt-5 md:pt-10 md:px-20">
+            <!-- FLEX CONTAINER -->
+            <div class="flex items-center justify-between">
+                <div class="items-center justify-between space-x-32 md:flex">
+                    <img class="max-w-[75%] md:max-w-[100%]" src="./Assets/Icons/Logo.svg" alt="logo">
+                    <!-- NAVIGATION MENU -->
+                    <div class="hidden space-x-12 text-white opacity-90 md:flex">
+                        <a href="#">Home</a>
+                        <a href="#">Categories</a>
+                        <a href="#">How it work</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                </div>
+                
+                <!-- BUTTONS -->
+                <div>
+                    <!-- SIGN IN -->
+                    <a href="#">Sign In</a>
+                    <!-- SIGN UP -->
+                    <a href="#">Sign Up</a>
                 </div>
             </div>
-            
-            <!-- BUTTONS -->
+        </nav>
+
+        <!-- HERO CONTAINER -->
+        <div class="px-5">
+            <!-- LEFT CONTAINER -->
             <div>
-                <!-- SIGN IN -->
-                <a href="#">Sign In</a>
-                <!-- SIGN UP -->
-                <a href="#">Sign Up</a>
+                <h1 class="text-white font-bold">Play Game Everytime Always Be Winner And Strong</h1>
+                <p class="text-white opacity-60">Improve your gaming skills by playing games that are currently popular so that you don't go out of style improve skills</p>
+                <!-- ACTION BUTTONS -->
+                <div>
+                    <a href="#">Get started</a>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <!-- RIGHT CONTAINER -->
+            <div>
+                <img src="./Assets/Icons/playButton.svg" alt="play-button">
+            </div>
+            <div>
+                <img src="./Assets/Icons/dash.svg" alt="dash">
+                <p class="text-white">The King Of Terania And Last Seasion XXIV</p>
+                <img src="./Assets/Icons/rightArrow.svg" alt="right-arrow">
             </div>
         </div>
-    </nav>
+
+
+
+
+    </section>
 </body>
 </html>
