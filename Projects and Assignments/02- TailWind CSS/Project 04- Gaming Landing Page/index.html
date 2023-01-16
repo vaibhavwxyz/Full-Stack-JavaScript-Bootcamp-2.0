@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    .blur-bg {
+        backdrop-filter: blur(50px);
+    }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gaming Landing Page</title>
 </head>
-<body>
+<body  class="font-[Poppins]">
     <section class="relative">
         <!-- BACKGROUND IMAGE -->
         <div class="absolute -z-10 w-full h-[100vh] bg-no-repeat bg-cover bg-top" style="background-image: url(./Assets/Photos/futuristic-bg.png);"></div>
@@ -42,11 +47,11 @@
             <!-- LEFT CONTAINER -->
             <div class="flex flex-col gap-8">
                 <h1 class="text-white font-bold text-3xl leading-snug">Play Game Everytime Always Be Winner And Strong</h1>
-                <p class="text-white opacity-60">Improve your gaming skills by playing games that are currently popular so that you don't go out of style improve skills</p>
+                <p class="text-white opacity-60 text-sm leading-normal max-w-sm">Improve your gaming skills by playing games that are currently popular so that you don't go out of style improve skills</p>
                 <!-- ACTION BUTTONS -->
                 <div class="flex flex-row items-center mx-auto gap-5">
-                    <a href="#" class="text-white font-semibold bg-[#f4694e] px-10 py-4">Get started</a>
-                    <a href="#" class="text-white font-semibold outline outline-2 outline-white px-10 py-4">Learn more</a>
+                    <a href="#" class="text-white font-semibold bg-[#f4694e] px-8 py-3">Get started</a>
+                    <a href="#" class="text-white font-semibold outline outline-2 outline-white px-8 py-3">Learn more</a>
                 </div>
             </div>
             <!-- RIGHT CONTAINER -->
@@ -54,17 +59,112 @@
                 <div class="mx-auto">
                     <img class="w-28" src="./Assets/Icons/playButton.svg" alt="play-button">
                 </div>
-                <div class="flex items-center gap-3 relative">
-                    <img src="./Assets/Icons/dash.svg" alt="dash">
-                    <p class="text-white text-2xl font-medium">The King Of Terania And Last Seasion XXIV</p>
-                    <img src="./Assets/Icons/rightArrow.svg" alt="right-arrow">
+                <div class="relative flex space-x-14">
+                    <img class="absolute top-4 left-2" src="./Assets/Icons/dash.svg" alt="dash">
+                    <p class="text-white text-2xl max-w-[15rem] font-medium">The King Of Terania And Last Seasion XXIV</p>
+                    <img class="absolute bottom-0 -right-2" src="./Assets/Icons/rightArrow.svg" alt="right-arrow">
                 </div>
             </div>
         </div>
-
-
-
-
     </section>
+
+    <!-- WHITE SECTION -->
+    <section class="bg-white">
+        <h2 class="text-3xl text-black font-extrabold py-10 max-w-xs leading-snug mx-auto text-center ">
+            The Most Popular Games About Fighting And Wars
+        </h1>
+        <!-- GAME CARD CONTAINER -->
+        <div class="flex flex-col gap-5">
+            <!-- THE SOLDIER WAR -->
+            <div class="relative flex flex-col items-center mx-auto bg-cover bg-no-repeat bg-[70%] h-[370px] w-[300px]" style="background-image: url(./Assets/Photos/image\ 2.png);">
+                <div class="absolute px-3 py-5 bottom-0 right-0 left-0 flex items-center justify-between gap-5 blur-bg">
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-white font-semibold">The Soldier War</h3>
+                        <p class="text-white opacity-50">Actions</p>
+                        <div class="flex flex-row gap-1">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-[#f4694c] text-white font-semibold px-5 py-3">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- THE WARRIORS IX -->
+            <div class="relative flex flex-col items-center mx-auto bg-cover bg-no-repeat bg-center bg-[70%] h-[370px] w-[300px]" style="background-image: url(./Assets/Photos/image\ 4.png);">
+                <div class="absolute px-3 py-5 bottom-0 right-0 left-0 flex items-center justify-between gap-5 blur-bg">
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-white font-semibold">The Warriors IX</h3>
+                        <p class="text-white opacity-50">Actions</p>
+                        <div class="flex flex-row gap-1">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-[#f4694c] text-white font-semibold px-5 py-3">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PUBJIKEN DAK -->
+            <div class="relative flex flex-col items-center mx-auto bg-cover bg-no-repeat bg-center bg-[70%] h-[370px] w-[300px]" style="background-image: url(./Assets/Photos/image\ 3.png);">
+                <div class="absolute w-full px-3 py-5 bottom-0 right-0 left-0 flex items-center justify-between gap-5 blur-bg">
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-white font-semibold">Pubjiken Dak</h3>
+                        <p class="text-white opacity-50">Actions</p>
+                        <div class="flex flex-row gap-1">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-[#f4694c] text-white font-semibold px-5 py-3">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- GARELA MENIHEM -->
+            <div class="relative flex flex-col items-center mx-auto bg-cover bg-no-repeat bg-center bg-[70%] h-[370px] w-[300px]" style="background-image: url(./Assets/Photos/Rectangle\ 56.png);">
+                <div class="absolute px-3 py-5 bottom-0 right-0 left-0 flex items-center justify-between gap-5 blur-bg">
+                    <div class="flex flex-col gap-1">
+                        <h3 class="text-white font-semibold">Garela Menihem</h3>
+                        <p class="text-white opacity-50">Actions</p>
+                        <div class="flex flex-row gap-1">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                            <img src="./Assets/Icons/Star 1.svg" alt="star">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-[#f4694c] text-white font-semibold px-5 py-3">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 </body>
 </html>
