@@ -9,14 +9,20 @@
     .blur-bg {
         backdrop-filter: blur(50px);
     }
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gaming Landing Page</title>
 </head>
-<body  class="font-[Poppins]">
+<body  class="font-[Poppins] overflow-x-hidden">
     <section class="relative">
         <!-- BACKGROUND IMAGE -->
-        <div class="absolute -z-10 w-full h-[100vh] bg-no-repeat bg-cover bg-top" style="background-image: url(./Assets/Photos/futuristic-bg.png);"></div>
+        <div class="absolute -z-10 w-full h-full bg-no-repeat bg-cover bg-top max-w-full" style="background-image: url(./Assets/Photos/futuristic-bg.png);"></div>
         <!-- NAV-BAR -->
         <nav class="bg-transparent relative container mx-auto px-5 pt-5 md:pt-10 md:px-20">
             <!-- FLEX CONTAINER -->
@@ -43,13 +49,13 @@
         </nav>
 
         <!-- HERO CONTAINER -->
-        <div class="px-5 my-12 flex flex-col gap-10 md:flex-row md:px-20 md:py-10 md:gap-64">
+        <div class="px-5 my-12 flex flex-col gap-10 md:flex-row md:px-20 md:py-20">
             <!-- LEFT CONTAINER -->
             <div class="flex flex-col gap-8 md:gap-12">
                 <h1 class="text-white font-bold text-3xl leading-snug md:text-6xl md:leading-normal md:max-w-2xl">Play Game Everytime Always Be Winner And Strong</h1>
                 <p class="text-white opacity-60 text-sm leading-normal max-w-sm md:max-w-md">Improve your gaming skills by playing games that are currently popular so that you don't go out of style improve skills</p>
                 <!-- ACTION BUTTONS -->
-                <div class="flex flex-row items-center gap-5 md:self-start">
+                <div class="flex flex-row items-center gap-5 mx-auto md:mx-0 md:self-start">
                     <a href="#" class="text-white font-semibold bg-[#f4694e] px-8 py-3 md:hover:outline md:hover:outline-2 md:hover:outline-white md:hover:bg-transparent">Get started</a>
                     <a href="#" class="text-white font-semibold outline outline-2 outline-white px-8 py-3 md:hover:text-white md:hover:outline-0 md:hover:bg-[#f4694e]">Learn more</a>
                 </div>
@@ -69,7 +75,7 @@
     </section>
 
     <!-- WHITE SECTION -->
-    <section class="bg-white">
+    <section class="bg-white ">
         <h2 class="text-3xl font-bold py-10 max-w-xs leading-snug mx-auto text-center md:text-6xl md:max-w-5xl md:leading-snug md:pt-32">
             The Most Popular Games About Fighting And Wars
         </h1>
@@ -276,7 +282,7 @@
     </section>
 
     <!-- MOST PLAYED SECTION -->
-    <section class="bg-black px-5 py-16">
+    <section class="bg-black px-5 py-16 ">
         <!-- MOST PLAYED GAMES CONTAINER -->
         <div class="md:relative">
             <div class="space-y-5">
@@ -307,14 +313,14 @@
 
         <!-- GET STARTED CONTAINER -->
         <div class="flex flex-col gap-5">
-            <img class="" src="./Assets/Photos/Rectangle 606.png" alt="">
+            <img src="./Assets/Photos/Rectangle 606.png" alt="">
             <h1 class="text-white font-semibold text-center mx-auto text-2xl">
                 Have An Unforgettable Experience
             </h1>
             <p class="text-white opacity-60 text-center mx-auto text-sm">
                 Have an unforgettable experience and play now to get attractive promos
             </p>
-            <button class="bg-[#f4694e] mx-auto text-white px-10 py-4 font-semibold">
+            <button class="bg-[#f4694e] mx-auto text-white px-10 py-4 font-semibold md:hover:outline md:hover-outline-2 md:hover:outline-white md:hover:bg-transparent">
                 Get Started
             </button>
         </div>
