@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        html {
+            font-family: 'Poppins', 'san-serif';
+            overflow-x: hidden;
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Live</title>
+</head>
+<body class="overflow-x-hidden">
+    <!-- HERO WRAPPER -->
+    <section>
+        <!-- BACKGROUND IMAGE -->
+        <div class="h-[80vh] bg-cover bg-center bg-no-repeat md:h-[110vh]" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Photos/mainBackground.png);">
+            <!-- NAV-BAR -->
+            <nav class="flex justify-between items-center p-5 md:px-40 md:py-10">
+                <!-- LOGO -->
+                <div>
+                    <img class="w-[70%] md:w-[90%]" src="./Icons/Logo.svg" alt="logo">
+                </div>
+                <!-- NAVIGATION MENU -->
+                <div class="hidden md:flex justify-between items-center gap-20">
+                    <a href="#" class="text-white opacity-70 text-xl md:hover:opacity-100">Location</a>
+                    <a href="#" class="text-white opacity-70 text-xl md:hover:opacity-100">Blogs</a>
+                    <a href="#" class="text-white opacity-70 text-xl md:hover:opacity-100">Testimonials</a>
+                    <a href="#" class="text-white opacity-70 text-xl md:hover:opacity-100">Contact</a>
+                </div>
+            </nav>
+            <!-- UNERLINE DIV -->
+            <div class="mx-5 bg-white opacity-70 h-[1px] rounded-full"></div>
+            <!-- HERO CONTAINER -->
+            <div class="flex flex-col gap-10 py-10 px-5 md:gap-10 md:px-40">
+                <!-- HEADING -->
+                <h1 class="text-white font-bold text-4xl">
+                    <span class="block">Home That Makes</span>
+                    You Living Life!
+                </h1>
+                <!-- PARAGRAPH -->
+                <p class="text-white opacity-70 ">
+                    <span class="block">Are you looking for amazing Real estate? Don't</span>
+                    worry! We got it for you!
+                </p>
+                <!-- BUTTON -->
+                <div>
+                    <button class="text-white font-semibold bg-[#6563e9] px-7 py-3 rounded-full text-lg">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
