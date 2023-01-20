@@ -10,28 +10,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Live</title>
 </head>
-<body class="bg-[#0f0f10] font-[Poppins] md:px-40">
-    <!-- NAV-BAR -->
-    <nav class="flex items-center justify-between md:py-10">
-        <!-- LOGO -->
-        <div>
-            <img src="./Photos/beatsLogo.png" alt="logo">
-        </div>
-        <!-- RIGHT SIDE -->
-        <div class="hidden lg:flex items-center gap-32">
-            <!-- NAVIGATION MENU -->
-            <div class="space-x-16">
-                <a href="#" class="text-white font-bold text-lg md:hover:opacity-70">Home</a>
-                <a href="#" class="text-white font-bold text-lg md:hover:opacity-70">Specs</a>
-                <a href="#" class="text-white font-bold text-lg md:hover:opacity-70">Case</a>
-                <a href="#" class="text-white font-bold text-lg md:hover:opacity-70">Products</a>
+<body class="bg-[#0f0f10] font-[Poppins] px-5 lg:px-20 xl:px-40">
+
+    <main class="relative">
+        <!-- NAV-BAR -->
+        <nav class="flex items-center justify-between py-5 md:py-10">
+            <!-- LOGO -->
+            <div>
+                <img src="./Photos/beatsLogo.png" alt="logo">
             </div>
-            <!-- SHOP BUTTON -->
-            <button class="bg-[#1e1e21] text-white text-md px-16 py-5 rounded-md md:hover:bg-[#fafafa] md:hover:text-[#1e1e21] md:ease-in md:duration-300">
-                Shop
-            </button>
-        </div>
-    </nav>
+            <!-- RIGHT SIDE -->
+            <div class="hidden lg:flex items-center gap-32">
+                <!-- NAVIGATION MENU -->
+                <div class="space-x-16">
+                    <button href="#" class="text-white font-bold text-lg md:hover:opacity-70">Home</button>
+                    <button href="#" class="text-white font-bold text-lg md:hover:opacity-70">Specs</button>
+                    <button href="#" class="text-white font-bold text-lg md:hover:opacity-70">Case</button>
+                    <button href="#" class="text-white font-bold text-lg md:hover:opacity-70">Products</button>
+                </div>
+                <!-- SHOP BUTTON -->
+                <button class="bg-[#1e1e21] text-white text-md px-16 py-5 rounded-md md:hover:bg-[#fafafa] md:hover:text-[#1e1e21] md:ease-in md:duration-300">
+                    Shop
+                </button>
+            </div>
+        </nav>
+    
+        <!-- HERO SECTION -->
+        <section class="md:flex">
+            <!-- LEFT SIDE -->
+            <div class="flex justify-center md:w-96">
+                <img class="-z-10 opacity-30 absolute md:top-0 md:left-20 md:-top-24 " src="./Photos/mainImage.png" alt="img">
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="space-y-5 mt-5 md:flex md:flex-col md:md:pl-36">
+                <img class="mx-auto md:relative md:left-20" src="./Photos/onEar.png" alt="img">
+                <h1 class="text-[#f2f2f3] font-semibold text-5xl text-center md:text-start md:text-7xl">
+                    Beats 3
+                </h1>
+                <div class="space-y-5 md:space-y-10">
+                    <h3 class="text-[#f2f2f3] text-center md:text-start md:text-2xl md:font-medium md:pt-10">
+                        Overview
+                    </h3>
+                    <p class="text-white opacity-50 text-center md:text-start md:text-md md:space-y-2">
+                        <span class="md:block">Enjoy award-winning Beats sound with wireless</span>
+                        <span class="md:block">listening freedom and a sleek, streamlined design</span>
+                        <span class="md:block">with comfortable padded earphones, delivering</span>
+                        <span class="md:block">first-rate playback</span>
+                    </p>
+                    <button class="bg-[#1e1e21] rounded-xl px-6 py-4 gap-3 mx-auto md:mx-0 md:px-6 md:py-4 flex justify-between items-center md:gap-5 md:hover:bg-[#334155] md:hover:ease-in md:hover:duration-200 md:hover:scale-[0.98] md:ease-in-out md:transition-all">
+                        <img src="./Icons/shoppingBag.png" alt="bag">
+                        <span class="text-white opacity-70">Add to Bag</span>
+                        <span class="text-[#e7e7e7] font-bold md:text-xl">N399K</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
     
 </body>
 </html>
