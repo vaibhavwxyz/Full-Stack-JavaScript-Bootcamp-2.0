@@ -52,11 +52,17 @@
                     <h3 class="text-[#f2f2f3] text-center md:text-start md:text-2xl md:font-medium md:pt-10">
                         Overview
                     </h3>
-                    <p class="text-white opacity-50 text-center md:text-start md:text-md md:space-y-2">
+                    <p class="hidden text-white opacity-50 text-sm md:text-start md:text-md md:space-y-2 md:block">
                         <span class="md:block">Enjoy award-winning Beats sound with wireless</span>
                         <span class="md:block">listening freedom and a sleek, streamlined design</span>
                         <span class="md:block">with comfortable padded earphones, delivering</span>
                         <span class="md:block">first-rate playback</span>
+                    </p>
+                    <p class="text-white opacity-50 text-center text-xs md:hidden">
+                        <span class="block">Enjoy award-winning Beats sound with wireless</span>
+                        <span class="block">listening freedom and a sleek, streamlined</span>
+                        <span class="block">design with comfortable padded earphones,</span>
+                        <span class="block">delivering first-rate playback</span>
                     </p>
                     <button class="bg-[#1e1e21] rounded-xl px-6 py-4 gap-3 mx-auto md:mx-0 md:px-6 md:py-4 flex justify-between items-center md:gap-5 md:hover:bg-[#334155] md:hover:ease-in md:hover:duration-200 md:hover:scale-[0.98] md:ease-in-out md:transition-all">
                         <img src="./Icons/shoppingBag.png" alt="bag">
@@ -294,7 +300,7 @@
             <!-- FORM -->
             <div>
                 <form action="get" class="flex bg-[#181a1b] p-2 rounded-lg justify-between">
-                    <input class="bg-transparent" type="email" placeholder="Email">
+                    <input class="bg-transparent w-40" type="email" placeholder="Email">
                     <button class="bg-[#0a0a0b] text-[#6b7280] text-xs px-3 py-2 rounded-lg flex gap-2 justify-between items-center">
                         <img src="./Icons/rightArrow.png" alt="arrow">
                         Subscribe
