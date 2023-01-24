@@ -11,58 +11,194 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Live</title>
     <style>
-        .myHero {
-            clip-path: polygon(0 1%, 100% 0%, 100% 82%, 0 100%);
+        :root {
+            --bg-1: linear-gradient(0deg,
+                rgba(226, 241, 255, 1) 0%,
+                rgba(255, 255, 255, 1) 100%
+            );
+            --bg-2: linear-gradient(180deg,
+            rgba(252, 248, 255, 1) 0%,
+            rgba(242, 248, 255, 1) 100%
+            );
+        }
+        
+        .headerSection {
+            background: var(--bg-1);
+            transform: skew(0, -5deg);
+        }
+        .headerContent {
+            transform: skew(0, 5deg);
         }
     </style>
 </head>
 <body class="font-[Poppins]">
 
-    <!-- NAV-BAR -->
-    <nav class="p-5 flex justify-between items-center lg:px-64">
-        <!-- LOGO -->
-        <div>
-            <img src="./images/Logo.png" alt="logo">
-        </div>
-        <!-- NAVIGATION MENU -->
-        <div class="hidden md:flex flex-row items-center gap-12">
-            <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">About<i class="fa-solid fa-chevron-down ml-1"></i></a>
-            <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Pricing</a>
-            <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Contact Us</a>
-            <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Login</a>
-            <button class="text-[#8a2be2] font-medium px-5 py-2 outline outline-1 outline-[#8a2be2] rounded-full md:hover:bg-[#8a2be2] md:hover:text-white">Start free trial</button>
-        </div>
-        <button class="md:hidden text-[#8a2be2] font-medium px-5 py-2 outline outline-1 outline-[#8a2be2] rounded-full">Start free trial</button>
-
-    </nav>
-
 
     <!-- HERO SECTION -->
-    <section>
-        <!-- WRAPPER -->
-        <div class="lg:h-[80vh] myHero p-5 bg-gradient-to-t from-[#a1eeee81] flex flex-col-reverse lg:px-64 lg:py-8 lg:flex-row lg:items-center lg:justify-between">
-            <!-- LEFT SIDE -->
-            <div class="flex flex-col gap-5 lg:gap-8 lg:w-1/2">
-                <p class="bg-[#a8a8a81c] mx-auto w-fit text-[#8a2be2] font-medium flex gap-2 rounded-full px-5 py-2 lg:mx-0">
-                    <img src="./images/edit-brightness.svg" alt="star"> v3.1 released. <a href="#" class="underline">Learn more</a>
-                </p>
-                <h1 class="text-[#8a2be2] mx-auto font-bold text-center text-3xl lg:text-start lg:mx-0 lg:text-5xl lg:space-y-2"><span class="block">Your data with</span><span class="block">real-time analytics.</span></h1>
-                <p class="mx-auto text-center text-sm text-black font-medium opacity-50 lg:text-start lg:mx-0 lg:text-md">
-                    <span class="md:block">Harness the potential of Big Data Analytics & Cloud Services</span>
-                    and become a data-driven organization with Needle tail
-                </p>
-                <div class="mx-auto space-x-2 lg:text-start lg:mx-0">
-                    <button class="bg-[#8a2be2] text-white font-medium rounded-full text-sm px-5 py-2 lg:px-7 lg:py-3 lg:hover:bg-white lg:hover:text-[#8a2be2] lg:hover:outline lg:hover:outline-1 lg:hover:outline-[#8a2be2]">Start free trial</button>
-                    <button class="bg-white text-[#8a2be2] font-medium rounded-full text-sm px-5 py-2 lg:px-7 lg:py-3 lg:hover:bg-[#8a2be2] lg:hover:text-white ">Learn more</button>
+    <section class="headerSection">
+        <header class="headerContent">
+            <!-- NAV-BAR -->
+            <nav class="p-5 flex justify-between items-center lg:px-64">
+                <!-- LOGO -->
+                <div>
+                    <img src="./images/Logo.png" alt="logo">
+                </div>
+                <!-- NAVIGATION MENU -->
+                <div class="hidden md:flex flex-row items-center gap-12">
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">About<i class="fa-solid fa-chevron-down ml-1"></i></a>
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Pricing</a>
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Contact Us</a>
+                    <a href="#" class="text-black font-medium opacity-70 md:hover:text-[#8a2be2] md:hover:opacity-100">Login</a>
+                    <button class="text-[#8a2be2] font-medium px-5 py-2 outline outline-1 outline-[#8a2be2] rounded-full md:hover:bg-[#8a2be2] md:hover:text-white">Start free trial</button>
+                </div>
+                <button class="md:hidden text-[#8a2be2] font-medium px-5 py-2 outline outline-1 outline-[#8a2be2] rounded-full">Start free trial</button>
+    
+            </nav>
+            <!-- WRAPPER -->
+            <div class="lg:h-[80vh] pb-32 myHero p-5 flex flex-col-reverse lg:px-64 lg:py-8 lg:flex-row lg:items-center lg:justify-between">
+                <!-- LEFT SIDE -->
+                <div class="flex flex-col gap-5 lg:gap-8 lg:w-1/2">
+                    <p class="bg-[#a8a8a81c] mx-auto w-fit text-[#8a2be2] font-medium flex gap-2 rounded-full px-5 py-2 lg:mx-0">
+                        <img src="./images/edit-brightness.svg" alt="star"> v3.1 released. <a href="#" class="underline">Learn more</a>
+                    </p>
+                    <h1 class="text-[#8a2be2] mx-auto font-bold text-center text-3xl lg:text-start lg:mx-0 lg:text-5xl lg:space-y-2"><span class="block">Your data with</span><span class="block">real-time analytics.</span></h1>
+                    <p class="mx-auto text-center text-sm text-black font-medium opacity-50 lg:text-start lg:mx-0 lg:text-md">
+                        <span class="md:block">Harness the potential of Big Data Analytics & Cloud Services</span>
+                        and become a data-driven organization with Needle tail
+                    </p>
+                    <div class="mx-auto space-x-2 lg:text-start lg:mx-0">
+                        <button class="bg-[#8a2be2] text-white font-medium rounded-full text-sm px-5 py-2 lg:px-7 lg:py-3 lg:hover:bg-white lg:hover:text-[#8a2be2] lg:hover:outline lg:hover:outline-1 lg:hover:outline-[#8a2be2]">Start free trial</button>
+                        <button class="bg-white text-[#8a2be2] font-medium rounded-full text-sm px-5 py-2 lg:px-7 lg:py-3 lg:hover:bg-[#8a2be2] lg:hover:text-white ">Learn more</button>
+                    </div>
+                </div>
+        
+                <!-- RIGHT SIDE -->
+                <div class="lg:w-1/2">
+                    <img src="./images/image 1.png" alt="img">
                 </div>
             </div>
-    
-            <!-- RIGHT SIDE -->
-            <div class="lg:w-1/2">
-                <img src="./images/image 1.png" alt="img">
+        </header>
+    </section>
+
+    <!-- MID SECTION -->
+    <section class="p-5 flex flex-col items-center justify-between gap-5">
+        <!-- WHY QUBLY -->
+        <div>
+            <p class="bg-[#f3e9fe] text-[#8a2be2] font-medium px-5 py-2 rounded-full flex items-center justify-center gap-2 w-fit mx-auto"><img src="./images/Icon awesome-eye.png" alt="eye">Why Qubly</p>
+        </div>
+        <h2 class="text-black text-2xl text-center font-semibold">
+            Get actionable insights from Big Data in 3 steps
+        </h2>
+        <p class="text-black opacity-50 text-sm text-center">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua
+        </p>
+        <!-- 3 STEPS -->
+        <div class="flex flex-col items-center justify-between gap-5 px-5">
+            <!-- FIRST -->
+            <div class="p-5 max-w-xs flex flex-col items-center gap-3 outline outline-1 outline-[#8080803a] rounded-3xl">
+                <img src="./images/chart-bar-33.svg" alt="chart">
+                <h3 class="text-black font-medium text-lg text-center">Valuable business insights</h3>
+                <p class="text-sm text-black opacity-50 text-center">
+                    <span>Collect processed & cleansed data that</span>
+                    <span>is ready to be analyzed to gather</span>
+                    <span>valuable business insights.</span>
+                </p>
+            </div>
+            <!-- SECOND -->
+            <div class="p-5 max-w-xs flex flex-col items-center gap-3 outline outline-1 outline-[#8080803a] rounded-3xl">
+                <img src="./images/newsletter-dev.svg" alt="news-letter">
+                <h3 class="text-black font-medium text-lg text-center">Powerful Algorithms</h3>
+                <p class="text-sm text-black opacity-50 text-center">
+                    <span>With the help of powerful algotithms,</span>
+                    <span>quality rules & techniques, obtain</span>
+                    <span>simplified & enriched data.</span>
+                </p>
+            </div>
+            <!-- THIRD -->
+            <div class="p-5 max-w-xs flex flex-col items-center gap-3 outline outline-1 outline-[#8080803a] rounded-3xl">
+                <img src="./images/timeline.svg" alt="timeline">
+                <h3 class="text-black font-medium text-lg text-center">Data in real-time</h3>
+                <p class="text-sm text-black opacity-50 text-center">
+                    <span>Collect data in real-time from multiple</span>
+                    <span>channels and move it into a data lake, in</span>
+                    <span>its original format</span>
+                </p>
             </div>
         </div>
     </section>
+
+
+    <!-- PRODUCT TEAM -->
+    <section class="p-5">
+        <!-- WRAPPER -->
+        <div class="flex flex-col gap-5">
+            <div>
+                <img class="mx-auto" src="./images/Group 21.svg" alt="img">
+            </div>
+            <div class="flex flex-col gap-5">
+                <p class="bg-[#f3e9fe] w-fit px-5 py-2 mx-auto flex items-center gap-2 text-[#8a2be2] font-medium rounded-full">
+                    <img src="./images/Group 11.svg" alt="img">
+                    For Product Teams
+                </p>
+                <h3 class="text-black font-semibold text-2xl text-center">
+                    Launch with the best stack
+                </h3>
+                <p class="text-black opacity-50 text-sm text-center">
+                    A centralized platform that integrates zillions of data source using Big Data ELT (Extract, Load & Transform) that leaves no data behind
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DATA DRIVEN -->
+    <section class="p-5">
+        <!-- WRAPPER -->
+        <div class="flex flex-col gap-5">
+            <div>
+                <img class="mx-auto" src="./images/image 6.png" alt="img">
+            </div>
+            <div class="flex flex-col gap-5">
+                <p class="bg-[#f3e9fe] w-fit px-5 py-2 mx-auto flex items-center gap-2 text-[#8a2be2] font-medium rounded-full">
+                    <img src="./images/Group 28.svg" alt="img">
+                    For Engineering Teams
+                </p>
+                <h3 class="text-black font-semibold text-2xl text-center">
+                    Data-driven pipelines in minutes
+                </h3>
+                <p class="text-black opacity-50 text-sm text-center">
+                    Maintenance-free data pipeline with quick set-up and straight-forward deployments that are powered by a modern & scalable platform.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- REVIEW -->
+    <section class="">
+        <!-- WRAPPER -->
+        <div class="p-5 py-48 myReview bg-gradient-to-t from-[#fcf8ff] to-[#f2f8ff] flex flex-col items-center gap-5">
+            <p class="text-black text-lg text-center px-5">
+                "What I love abous SullivanAnalytics is the easy way we can collaborate even if there is a lot of people involved in the process"
+            </p>
+            <div>
+                <img class="mx-auto mb-3" src="./images/Profile.png" alt="profile">
+                <h3 class="text-center">Rowan Sullivan</h3>
+                <h3 class="text-center">CTO @SullivanAnalytics</h3>
+            </div>
+            <div class="h-[1px] w-full bg-black opacity-30 rounded-full"></div>
+            <!-- LOGO WRAPPER -->
+            <div class="hidden flex">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo.png" alt="logo">
+            </div>
+
+        </div>
+    </section>
+
 
 
 </body>
