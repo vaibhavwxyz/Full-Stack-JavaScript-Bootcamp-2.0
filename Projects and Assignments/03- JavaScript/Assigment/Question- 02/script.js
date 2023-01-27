@@ -1,4 +1,4 @@
-// 02. Declare variables to store your first name, last name, marital status, country and age and display them using interpolation method.
+// Question 02. Declare variables to store your first name, last name, marital status, country and age and display them using interpolation method.
 
 /* NOTE: Interpolation is a way to insert a variable or expression into a string, typically using template literals in JavaScript.
 This is done by enclosing the variable or expression in curly braces {} and preceding it with a dollar sign */
