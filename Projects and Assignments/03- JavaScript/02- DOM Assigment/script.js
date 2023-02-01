@@ -27,5 +27,5 @@ container.addEventListener("click", (e) => {
 
     setTimeout(() => {
         circle.remove();
-    }, 2000);
+    }, 1000);
 });
