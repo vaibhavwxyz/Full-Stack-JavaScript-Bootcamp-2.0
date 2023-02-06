@@ -4,10 +4,13 @@
 - **This is my repository for Full Stack JavaScript Bootcamp 2.0 Course by Hitesh Sir and Anurag Sir.**
 - **All the Projects, Articles and other practices are listed below.**
 
+<hr>
+
 # 📝 Articles
 | **Articles** 	| [Click Here to get the list of all articles](./Articles%20and%20Homeworks/Articles/README.md)|
 |----------	|--------------------------------------------------------------------------	|
 
+<hr>
 
 # 👨‍💻 Practice & Homeworks
 
@@ -25,6 +28,7 @@
 | 1   	| JavaScript- 30 Basic Questions | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/01-%20Assigment/) 	     |                                                   | 08th January |
 | 2   	| JavaScript- Assignment on DOM  | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/02-%20DOM%20Assigment/)  | [Live](https://fsjs2-javascript-dom.netlify.app/) | 21st January |
 
+<hr>
 
 # 💻 Projects *(Order - Older First)*
 - ### All Projects Folder Link - [Click Here](./Projects%20and%20Assignments/)
