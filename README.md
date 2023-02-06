@@ -23,23 +23,23 @@
 | No. 	| **Name**                       | **Folder Link**                                                                       | **Live Link**                             	     | **Date**     |
 |-------|--------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------|--------------|
 | 1   	| JavaScript- 30 Basic Questions | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/01-%20Assigment/) 	     |                                                   | 08th January |
-| 2   	| JavaScript- Assignment on DOM  | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/02-%20DOM%20Assigment/)  | [live](https://fsjs2-javascript-dom.netlify.app/) | 21st January |
+| 2   	| JavaScript- Assignment on DOM  | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/02-%20DOM%20Assigment/)  | [Live](https://fsjs2-javascript-dom.netlify.app/) | 21st January |
 
 
 # 💻 Projects *(Order - Older First)*
 - ### All Projects Folder Link - [Click Here](./Projects%20and%20Assignments/)
 
 
-## <img height="16px" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"><img height="16px" src="https://user-images.githubusercontent.com/110087385/210600757-c5cd4168-1913-4cb9-8c09-1d43f9a7565b.png"> HTML and CSS Projects of 20th Nov
+## <img height="20px" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"><img height="20px" src="https://user-images.githubusercontent.com/110087385/210600757-c5cd4168-1913-4cb9-8c09-1d43f9a7565b.png"> HTML and CSS Projects of 20th Nov
 
-| No. 	| **Project Name** 	| **Project Folder**                                                                  	                                                              | **Assignment Date** |
-|-------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| 1   	| SEO Master       	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2001-%20We%20Help%20You%20Crush%20Your%20Competition/) 	      | 20th November       |
-| 2   	| Crypto Market    	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2002-%20Lets%20Build%20a%20Better%20Tomorrow%2C%20Together/) 	  | 20th November       |
-| 3   	| Fashion Hub      	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2003-%20What's%20Trend%20in%202025/)                      	  | 20th November       |
-| 4  	| Calm             	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2004-%20Be%20Focus%20and%20Productive/)                   	  | 26th November       |
-| 5  	| Medifine         	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2005-%20Complete%20Health%20Care%20Solutions%20for%20Everyone/) | 26th November       |
-| 6  	| Justice          	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2006-%20Your%20Justice%20is%20our%20Top%20Priority/) 	          | 26th November       |
+| No. 	| **Project Name** 	| **Project Live Link**                                 | **Project Folder**                                                                  	                                                              | **Assignment Date** |
+|-------|-------------------|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| 1   	| SEO Master       	| [Live](https://fsjs2-css-project-01.netlify.app)  	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2001-%20We%20Help%20You%20Crush%20Your%20Competition/) 	      | 20th November       |
+| 2   	| Crypto Market    	| [Live](https://fsjs2-css-project-02.netlify.app)  	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2002-%20Lets%20Build%20a%20Better%20Tomorrow%2C%20Together/) 	  | 20th November       |
+| 3   	| Fashion Hub      	| [Live](https://fsjs2-css-project-03.netlify.app)  	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2003-%20What's%20Trend%20in%202025/)                      	  | 20th November       |
+| 4  	| Calm             	| [Live](https://fsjs2-css-project-04.netlify.app)  	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2004-%20Be%20Focus%20and%20Productive/)                   	  | 26th November       |
+| 5  	| Medifine         	| [Live](https://fsjs2-css-project-05.netlify.app)  	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2005-%20Complete%20Health%20Care%20Solutions%20for%20Everyone/) | 26th November       |
+| 6  	| Justice          	| [Live](https://fsjs2-css-project-06.netlify.app)  	| [Click Here](./Projects%20and%20Assignments/01-%20HTML%20and%20CSS/Projects/Project%2006-%20Your%20Justice%20is%20our%20Top%20Priority/) 	          | 26th November       |
 
 
 ## <img height="20px" src="https://user-images.githubusercontent.com/110087385/210603643-e581d4a4-9ecc-41a3-bf6a-e05bc6123496.png"> Tailwind CSS Project
