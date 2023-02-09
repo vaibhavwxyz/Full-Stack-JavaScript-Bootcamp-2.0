@@ -56,13 +56,21 @@
 // console.log(bb);
 // console.log(cc);
 
-var a = 100;
-{
-	var a = 10;
-	let b = 20;
-	const c = 30;
+// var a = 100;
+// {
+// 	var a = 10;
+// 	let b = 20;
+// 	const c = 30;
+// 	console.log(a);
+// 	console.log(b);
+// 	console.log(c);
+// }
+// console.log(a);
+
+let a = 10;
+
+test();
+function test() {
+	a = 20;
 	console.log(a);
-	console.log(b);
-	console.log(c);
 }
-console.log(a);
