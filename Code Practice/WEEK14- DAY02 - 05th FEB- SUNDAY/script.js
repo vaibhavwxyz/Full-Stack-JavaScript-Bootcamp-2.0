@@ -34,11 +34,11 @@
 // 	}
 // }
 
-{
-	// block, we group together multiple statements in blocks
-	// var a = 10;
-	// console.log(a);
-}
+// {
+// block, we group together multiple statements in blocks
+// var a = 10;
+// console.log(a);
+// }
 
 // if (true) console.log(a); // valid
 
@@ -67,10 +67,29 @@
 // }
 // console.log(a);
 
-let a = 10;
+// let a = 10;
 
-test();
-function test() {
-	a = 20;
-	console.log(a);
+// test();
+// function test() {
+// 	let a = 20;
+// 	console.log(a);
+// }
+
+// CLOSURES // function along with its lexical scope
+// function x() {
+// 	var a = 7;
+// 	function y() {
+// 		console.log(a);
+// 	}
+// 	y();
+// }
+// x();
+x();
+function x() {
+	var a = 7;
+	return function y() {
+		console.log(a);
+	};
 }
+var z = x();
+console.log(z); // it prints the whole function that was returned by x()
