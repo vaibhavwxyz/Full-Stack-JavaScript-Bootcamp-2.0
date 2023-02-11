@@ -19,3 +19,17 @@ const li = document.createElement("li");
 li.innerText = "x-men";
 li.style.padding = "24px";
 h1.append(li);
+
+// setting attribute
+li.setAttribute("class", "card");
+li.classList.add("card"); // same as above
+li.classList.remove("card");
+
+// remove element
+li.remove();
+
+const card3 = document.querySelector(".card-3");
+// console.log(card3);
+// console.log(card3.innerText);
+console.log(card3.childNodes);
+console.log(card3.childElement);
