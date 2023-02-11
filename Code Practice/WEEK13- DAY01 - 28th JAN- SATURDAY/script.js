@@ -32,4 +32,4 @@ const card3 = document.querySelector(".card-3");
 // console.log(card3);
 // console.log(card3.innerText);
 console.log(card3.childNodes);
-console.log(card3.childElement);
+console.log(card3.children);
