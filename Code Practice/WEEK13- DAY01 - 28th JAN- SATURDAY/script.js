@@ -32,4 +32,8 @@ const card3 = document.querySelector(".card-3");
 // console.log(card3);
 // console.log(card3.innerText);
 console.log(card3.childNodes);
-console.log(card3.children);
+let childElements = card3.children;
+
+for (let i = 0; i < childElements; i++) {
+	// do something with each child element
+}
