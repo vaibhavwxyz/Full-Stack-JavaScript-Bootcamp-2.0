@@ -6,10 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Event Listeners</title>
 		<style>
-			html {
+			body {
 				background-color: #818181;
 			}
-			.container {
+			/* .container {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -29,16 +29,41 @@
 				padding: 1rem;
 				width: 150px;
 				height: 250px;
+			} */
+			.container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 2rem;
+			}
+			.boxes {
+				text-align: center;
+			}
+			.reveal-btn {
+				flex-shrink: 0;
+			}
+			.hidden-content {
+				display: none;
+				flex-shrink: 1;
+			}
+			.hidden-content.reveal-btn {
+				display: block;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container">
+		<!-- <div class="container">
 			<h1>Event Listeners</h1>
 			<div class="card-wrapper">
 				<div class="card card-1">
 					<h2 id="h2">Example 1</h2>
-					<button class="btn btn-1">Enter</button>
+					<button
+						class="btn btn-1"
+						onclick="alert('I Love JavaScript')"
+					>
+						Enter
+					</button>
 				</div>
 				<div class="card card-2">
 					<h2>Example 2</h2>
@@ -47,8 +72,20 @@
 				<div class="card card-3">
 					<h2>Example 3</h2>
 					<button class="btn btn-3">Enter</button>
-					hjgj
 				</div>
+			</div>
+		</div> -->
+
+		<h1 id="main-heading">Event Listeners</h1>
+		<div class="container">
+			<button class="reveal-btn boxes">Reveal More</button>
+			<div class="hidden-content boxes">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+				quos ex aliquam voluptatum enim maxime voluptates impedit optio
+				atque! Eius saepe explicabo, aliquam laboriosam sed, nihil
+				voluptates sapiente a enim labore ducimus quis distinctio
+				incidunt quasi alias, nobis accusantium ullam. Ullam cum fuga
+				possimus quidem veniam impedit quia voluptatibus rerum?
 			</div>
 		</div>
 
