@@ -18,3 +18,20 @@ const element = document.createElement("li");
 element.innerHTML = "Hire Me";
 ul.append(element);
 ```
+
+#
+
+### Task 02
+
+**Before Update**
+![Before Task 2](https://user-images.githubusercontent.com/73052214/218949114-fd32a6e6-9ff9-4997-9afa-3ff6264f024a.png)
+
+**After Update**
+![After Task 2](https://user-images.githubusercontent.com/73052214/218949614-317c95c1-3b80-4e00-9f2a-2bed124dd1bb.png)
+
+```javascript
+// Solution Task 2
+
+const searchField = document.querySelector(".search-field input");
+searchField.placeholder = "Search My Project";
+```
