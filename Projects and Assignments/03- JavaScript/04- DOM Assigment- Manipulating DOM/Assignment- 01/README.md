@@ -48,6 +48,13 @@ searchField.placeholder = "Search My Project";
 **_After Update_**
 ![After Task 3](https://user-images.githubusercontent.com/73052214/218956062-2c6784fd-f86d-44bf-97a6-71720353bb44.png)
 
+```javascript
+// Solution Task 3
+const span = document.querySelectorAll(".hero-left-section p span");
+span[1].innerText = "an Employee";
+span[2].innerText = "iNeuron Intelligence Pvt Ltd";
+```
+
 #
 
 ### Task 4
@@ -60,13 +67,27 @@ searchField.placeholder = "Search My Project";
 **_After Update_**
 ![After Task 4](https://user-images.githubusercontent.com/73052214/218957617-84d8838d-7b8b-426c-99ef-0a7603c33aa5.png)
 
+```javascript
+// Solution Task 4
+const profile = document.querySelector(".hero-right-section img");
+profile.src =
+	"https://hiteshchoudhary.com/static/a8d73d1aac4c79e9bb689640e6090367/2eaab/person-image.jpg";
+```
+
 #
 
 ### Task 5
 
 > I have to add another named "Support Me" beside the "Chat With Me" button.
-> **_Before Update_**
-> ![Before Task 5](https://user-images.githubusercontent.com/73052214/218957617-84d8838d-7b8b-426c-99ef-0a7603c33aa5.png)
+> **_Before Update_** > ![Before Task 5](https://user-images.githubusercontent.com/73052214/218957617-84d8838d-7b8b-426c-99ef-0a7603c33aa5.png)
 
 **_After Update_**
 ![After Task 5](https://user-images.githubusercontent.com/73052214/218959915-79466fd1-e9b5-4c7b-9d11-ad92d7c3d36c.png)
+
+```javascript
+// Solution Task 5
+const btnWrapper = document.querySelector(".hero-right-section-btns");
+const btn = document.createElement("button");
+btn.innerText = "Support Me";
+btnWrapper.appendChild(btn);
+```
