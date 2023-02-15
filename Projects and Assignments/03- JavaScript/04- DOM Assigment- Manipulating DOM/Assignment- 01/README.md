@@ -23,6 +23,8 @@ ul.append(element);
 
 ### Task 02
 
+> I have to change the text inside search input field from "Search" to "Search My Project".
+
 **Before Update**
 ![Before Task 2](https://user-images.githubusercontent.com/73052214/218949114-fd32a6e6-9ff9-4997-9afa-3ff6264f024a.png)
 
