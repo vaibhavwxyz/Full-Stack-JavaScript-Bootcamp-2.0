@@ -1,6 +1,6 @@
 # Assignment- 01
 
-## Task 1
+### Task 1
 
 > I have to add an element named 'Hire Me' in the navigation menu.
 
@@ -20,7 +20,7 @@ ul.append(element);
 
 #
 
-## Task 2
+### Task 2
 
 > I have to change the text inside search input field from "Search" to "Search My Project".
 
@@ -35,3 +35,38 @@ ul.append(element);
 const searchField = document.querySelector(".search-field input");
 searchField.placeholder = "Search My Project";
 ```
+
+#
+
+### Task 3
+
+> I have to change the paragraph text from "a Freelancer for National and International Client" to "an Employee for iNeuron Intelligence Pvt Ltd".
+
+**_Before Update_**
+![Before Task 3](https://user-images.githubusercontent.com/73052214/218953451-2148c290-5915-4b19-b8ec-fae3e27109a3.png)
+
+**_After Update_**
+![After Task 3](https://user-images.githubusercontent.com/73052214/218956062-2c6784fd-f86d-44bf-97a6-71720353bb44.png)
+
+#
+
+### Task 4
+
+> I have to change to image to Hitesh sir's image.
+
+**_Before Update_**
+![Before Task 4](https://user-images.githubusercontent.com/73052214/218956062-2c6784fd-f86d-44bf-97a6-71720353bb44.png)
+
+**_After Update_**
+![After Task 4](https://user-images.githubusercontent.com/73052214/218957617-84d8838d-7b8b-426c-99ef-0a7603c33aa5.png)
+
+#
+
+### Task 5
+
+> I have to add another named "Support Me" beside the "Chat With Me" button.
+> **_Before Update_**
+> ![Before Task 5](https://user-images.githubusercontent.com/73052214/218957617-84d8838d-7b8b-426c-99ef-0a7603c33aa5.png)
+
+**_After Update_**
+![After Task 5](https://user-images.githubusercontent.com/73052214/218959915-79466fd1-e9b5-4c7b-9d11-ad92d7c3d36c.png)
