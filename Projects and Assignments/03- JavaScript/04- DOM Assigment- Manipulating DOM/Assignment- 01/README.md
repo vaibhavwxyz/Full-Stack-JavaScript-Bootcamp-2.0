@@ -15,7 +15,7 @@
 const ul = document.querySelector("nav ul");
 const element = document.createElement("li");
 element.innerHTML = "Hire Me";
-ul.append(element);
+ul.appendChild(element);
 ```
 
 #
