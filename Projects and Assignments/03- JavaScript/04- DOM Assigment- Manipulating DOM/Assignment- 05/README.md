@@ -1,4 +1,4 @@
-# Assignment 05
+# Assignment- 05
 
 > I have to change the font color of the Navbar links and the Recipe Gallery, add a new button beside "Contact", add new "Chinese" recipe in the recipe names and I have to add a new card in the "Recipe Gallery" with "add 6th card here" written in it.
 

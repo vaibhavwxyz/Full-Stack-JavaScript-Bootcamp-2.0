@@ -1,4 +1,4 @@
-// Solution Assignment 04
+//! Solution Assignment 04
 
 // Setting font colors to white
 const allContainers = document.querySelectorAll(".clash-card__unit-stats div");

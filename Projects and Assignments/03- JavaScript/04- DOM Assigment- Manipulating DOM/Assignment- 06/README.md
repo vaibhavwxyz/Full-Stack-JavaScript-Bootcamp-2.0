@@ -1,4 +1,4 @@
-# Assignment-06
+# Assignment- 06
 
 ### Task 1
 
@@ -29,6 +29,7 @@ logo.src = "https://ineuron.ai/images/ineuron-logo.png";
 ![after](https://user-images.githubusercontent.com/73052214/219328946-b0c89ab1-26ee-40ee-b0e7-4f7fc229cd6e.png)
 
 ```javascript
+// Solution Task 2
 const price = document.querySelector(".app_price span");
 price.innerText = "$10";
 ```

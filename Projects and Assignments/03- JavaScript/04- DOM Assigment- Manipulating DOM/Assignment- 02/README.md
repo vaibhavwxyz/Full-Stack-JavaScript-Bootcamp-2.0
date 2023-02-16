@@ -32,6 +32,8 @@ accordianDescription.forEach((val) => (val.style.backgroundColor = "#eeeeff"));
 ![After Task 2](https://user-images.githubusercontent.com/73052214/218975252-de58c4cb-861d-4d02-8c8c-b899542202e1.png)
 
 ```javascript
+// Solution Task 2
+
 // Adding Skills Section in About
 const accordianContainer = document.querySelector(".accordian-wrapper");
 const accordianSkills = document.createElement("div");

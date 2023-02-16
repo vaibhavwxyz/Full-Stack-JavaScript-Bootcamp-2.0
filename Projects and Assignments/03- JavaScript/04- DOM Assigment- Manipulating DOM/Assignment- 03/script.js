@@ -1,4 +1,4 @@
-//! Assignment- 01
+//! Assignment- 03
 
 //* Task 01
 const ul = document.querySelector("nav ul");
