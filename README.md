@@ -28,9 +28,9 @@
 | No. | **Name**                               | **Folder Link**                                                                                                     | **Live Link**                                          | **Date**     |
 | --- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------ |
 | 1   | JavaScript- 30 Basic Questions         | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/01-%20Assigment/)                                      |                                                        | 08th January |
-| 2   | DOM Assigment- Circle                  | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/02-%20DOM%20Assigment/)                                | [Live](https://fsjs2-javascript-dom.netlify.app/)      | 21st January |
-| 3   | DOM Assigment- Random Background Color | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/03-%20DOM%20Assigment-%20Random%20Background%20Color/) | [Live](https://fsjs2-javascript-dom-bgc.netlify.app/.) | 21st January |
-| 4   | DOM Assigment- Manipulating DOM        | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/04-%20DOM%20Assigment-%20Manipulating%20DOM/)          |                                                        | 21st January |
+| 2   | DOM Assigment- Circle                  | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/02-%20DOM%20Assigment-%20Circle/)                      | [Live](https://fsjs2-javascript-dom.netlify.app/)      | 21st January |
+| 3   | DOM Assigment- Random Background Color | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/03-%20DOM%20Assigment-%20Random%20Background%20Color/) | [Live](https://fsjs2-javascript-dom-bgc.netlify.app/.) | 22nd January |
+| 4   | DOM Assigment- Manipulating DOM        | [Click Here](./Projects%20and%20Assignments/03-%20JavaScript/04-%20DOM%20Assigment-%20Manipulating%20DOM/)          |                                                        | 28th January |
 
 <hr>
 
