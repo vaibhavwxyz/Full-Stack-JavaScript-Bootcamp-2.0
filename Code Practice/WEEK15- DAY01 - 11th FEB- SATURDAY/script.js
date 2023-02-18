@@ -14,3 +14,23 @@ const countries = [
 ];
 const filterValue = countries.filter((e) => e.includes("land"));
 // console.log(filterValue);
+
+//* Promise
+const makePromise = new Promise((safal, reject) => {
+	setTimeout(() => {
+		const languages = ["HTML", "CSS", "Tailwind", "JavaScript"];
+		if (languages.length > 0) {
+			safal("completed");
+		} else {
+			reject("incompleted");
+		}
+	}, 2000);
+});
+
+makePromise
+	.then((result) => {
+		console.log(result);
+	})
+	.catch((result) => {
+		console.log(result);
+	});
