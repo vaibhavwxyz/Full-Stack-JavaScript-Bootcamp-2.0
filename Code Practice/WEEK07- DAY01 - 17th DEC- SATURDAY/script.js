@@ -100,6 +100,6 @@ let lNames = ["shinde", "maddilwar", "ambhore"];
 // console.log(filterResult);
 
 //* for of loop
-for (let x of countries) {
-  console.log(x);
-}
+// for (let x of countries) {
+//   console.log(x);
+// }
