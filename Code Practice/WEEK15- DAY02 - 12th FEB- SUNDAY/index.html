@@ -20,8 +20,39 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
+      // const rootElement = document.querySelector(".root");
+      // const element = <h1>Hello Vaibhav!</h1>;
+      // ReactDOM.render(element, rootElement);
+
       const rootElement = document.querySelector(".root");
-      const element = <h1>Hello Vaibhav!</h1>;
+
+      const header = (
+        <header style={{ color: "red", border: "2px solid white" }}>
+          <h1>Hello, Vaibhav</h1>
+          <p>Welcome to React CDN</p>
+        </header>
+      );
+      const main = (
+        <main>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem
+            velit perferendis ex aliquam est maxime alias voluptatum debitis
+            minus.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ut.
+          </p>
+        </main>
+      );
+      const css = { color: "yellow", backgroundColor: "pink" };
+      const footer = <footer style={css}> copyright @2023 </footer>;
+
+      const element = (
+        <>
+          {header} {main} {footer}
+        </>
+      );
+
       ReactDOM.render(element, rootElement);
     </script>
 
