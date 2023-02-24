@@ -14,6 +14,11 @@ function Counter() {
 
 function Superhero() {
   const [hero, setHero] = useState(["superman", "thor", "batman", "spiderman"]);
+  const [name, setName] = useState(() => "antman");
+  const onAddName = () => {
+    setHero([...hero, name]);
+    setName("");
+  };
 
   return (
     <>
@@ -22,6 +27,12 @@ function Superhero() {
           <li key={h}>{h}</li>
         ))}
       </ul>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <button onClick={onAddName}>Add value</button>
     </>
   );
 }
