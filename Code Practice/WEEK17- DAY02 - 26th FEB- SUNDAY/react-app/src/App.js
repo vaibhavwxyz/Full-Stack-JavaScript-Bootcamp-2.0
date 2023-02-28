@@ -1,4 +1,5 @@
 import myCust from "./PropDrilling";
+import { Cards } from "./Cards";
 
 function App() {
   const user = {
@@ -31,10 +32,17 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Hello, {formatName(user)}</h1>
-      <h2>How's the weather in {formatAddress(user)}</h2>
+    <div className="App text-center p-10">
+      <h1 className="text-cyan-600 font-bold text-4xl">
+        Hello, {formatName(user)}
+      </h1>
+      <h2 className="text-red-400 font-semibold">
+        How's the weather in {formatAddress(user)}?
+      </h2>
       <myCust />
+      <Cards fName="prashant" />
+      <Cards fName="vinya" />
+      <Cards fName="sujit" />
     </div>
   );
 }
