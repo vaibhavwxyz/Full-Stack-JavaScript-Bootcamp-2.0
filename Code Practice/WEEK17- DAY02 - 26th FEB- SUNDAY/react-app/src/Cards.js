@@ -1,10 +1,10 @@
 import React from "react";
 
-export const Cards = (props) => {
+export const Cards = ({ fName }) => {
   return (
     <>
       <h1 style={{ color: "black", backgroundColor: "#ffffff" }}>
-        kaise ho, {props.fName}?
+        kaise ho, {fName}?
       </h1>
     </>
   );
