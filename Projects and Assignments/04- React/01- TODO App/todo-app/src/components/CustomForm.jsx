@@ -22,7 +22,7 @@ const CustomForm = ({ addTask }) => {
           <input
             type="text"
             id="task"
-            className="px-2 border-[2px] outline-none drop-shadow-xl rounded-full max-w-xs placeholder:text-blue-500"
+            className="px-2 border-[2px] outline-none drop-shadow-xl rounded-full max-w-xs"
             value={task}
             onInput={(e) => setTask(e.target.value)}
             autoFocus
