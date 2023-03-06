@@ -1,10 +1,12 @@
-import UseState1 from "./components/useState/UseState1";
+import UseState1 from "./components/01- useState/UseState1";
+import UseState2 from "./components/01- useState/UseState2";
 
 function App() {
   return (
     <div>
-      <UseState1 data={1} />
-      <UseState1 data={5} />
+      <UseState1 />
+      {/* <UseState2 data={1} />
+      <UseState2 data={5} /> */}
     </div>
   );
 }

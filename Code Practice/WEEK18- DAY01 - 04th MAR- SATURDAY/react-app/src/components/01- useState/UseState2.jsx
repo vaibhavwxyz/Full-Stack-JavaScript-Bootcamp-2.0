@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-function UseState1({ data }) {
-  const [value, setValue] = useState(data);
+function UseState2({ data }) {
+  const [value, setValue] = useState(100);
 
   function increment() {
     setValue(value + data);
@@ -19,4 +19,4 @@ function UseState1({ data }) {
   );
 }
 
-export default UseState1;
+export default UseState2;
