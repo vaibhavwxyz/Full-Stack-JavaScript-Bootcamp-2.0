@@ -4,7 +4,8 @@ import React from "react";
 
 const UseState1 = () => {
   const arr = useState();
-  console.log(arr);
+  console.log(arr[0]);
+  console.log(arr[1]);
 
   return <div>UseState1</div>;
 };
