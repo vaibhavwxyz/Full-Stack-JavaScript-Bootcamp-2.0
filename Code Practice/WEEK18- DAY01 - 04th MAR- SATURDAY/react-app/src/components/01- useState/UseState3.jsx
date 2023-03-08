@@ -19,7 +19,12 @@ const UseState3 = () => {
       <input
         type="text"
         placeholder="type anything"
-        onChange={(e) => setName(e.target.value)}
+        onChange={(e) => {
+          setName(e.target.value);
+          // console.log(e);
+          // console.log(e.target);
+          // console.log(e.target.value);
+        }}
       ></input>
       <h1>
         {name} has been clicked {value} times
