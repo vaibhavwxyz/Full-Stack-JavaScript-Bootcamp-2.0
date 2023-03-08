@@ -10,6 +10,8 @@ const UseState4 = () => {
     }));
   }
 
+  console.log(details);
+
   return (
     <div>
       <input
