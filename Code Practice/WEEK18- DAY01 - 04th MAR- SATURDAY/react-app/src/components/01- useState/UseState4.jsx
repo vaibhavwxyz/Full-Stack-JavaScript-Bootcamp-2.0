@@ -4,6 +4,7 @@ const UseState4 = () => {
   const [details, setDetails] = useState({ counter: 0, name: "" });
 
   function oneUp() {
+    // setDetails({ counter: details.counter + 1 });
     setDetails((prev) => ({
       ...prev,
       counter: prev.counter + 1,
