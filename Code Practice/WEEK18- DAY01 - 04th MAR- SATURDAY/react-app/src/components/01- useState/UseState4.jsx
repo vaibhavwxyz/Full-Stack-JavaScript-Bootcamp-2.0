@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// useState with Object
 const UseState4 = () => {
   const [details, setDetails] = useState({ counter: 0, name: "" });
 
