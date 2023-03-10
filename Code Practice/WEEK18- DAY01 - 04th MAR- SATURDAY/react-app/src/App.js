@@ -10,7 +10,7 @@ function App() {
       <UseState2 data={1} />
       <UseState2 data={5} /> */}
       {/* <UseState3 /> */}
-      <UseState4 />
+      {/* <UseState4 /> */}
     </div>
   );
 }
