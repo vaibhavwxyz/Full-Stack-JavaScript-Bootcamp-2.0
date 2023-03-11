@@ -6,6 +6,9 @@ import UseState4 from "./components/01- useState/UseState4";
 import UseEffect1 from "./components/02- useEffect/UseEffect1";
 import UseEffect2 from "./components/02- useEffect/UseEffect2";
 import UseEffect3 from "./components/02- useEffect/UseEffect3";
+import UseContext from "./components/03- useContext/prop-drilling/PropDrilling";
+
+import UseRef from "./components/04- useRef/UseRef";
 
 function App() {
   return (
@@ -17,7 +20,9 @@ function App() {
       {/* <UseState4 /> */}
       {/* <UseEffect1 /> */}
       {/* <UseEffect2 /> */}
-      <UseEffect3 />
+      {/* <UseEffect3 /> */}
+      <UseContext />
+      {/* <UseRef /> */}
     </>
   );
 }
