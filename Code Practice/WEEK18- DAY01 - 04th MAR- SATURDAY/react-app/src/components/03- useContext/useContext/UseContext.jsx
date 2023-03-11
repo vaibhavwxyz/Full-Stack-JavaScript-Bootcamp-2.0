@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React, { createContext, useContext } from "react";
 import ChildA from "./ChildA";
 
-export const data = useContext();
+export const data = createContext();
 
 const UseContext = () => {
   const Lname = "shinde";
