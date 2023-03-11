@@ -5,6 +5,7 @@ import UseState3 from "./components/01- useState/UseState3";
 import UseState4 from "./components/01- useState/UseState4";
 import UseEffect1 from "./components/02- useEffect/UseEffect1";
 import UseEffect2 from "./components/02- useEffect/UseEffect2";
+import UseEffect3 from "./components/02- useEffect/UseEffect3";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <UseState3 /> */}
       {/* <UseState4 /> */}
       {/* <UseEffect1 /> */}
-      <UseEffect2 />
+      {/* <UseEffect2 /> */}
+      <UseEffect3 />
     </>
   );
 }
