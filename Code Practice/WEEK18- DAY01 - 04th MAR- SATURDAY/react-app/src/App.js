@@ -22,8 +22,8 @@ function App() {
       {/* <UseEffect2 /> */}
       {/* <UseEffect3 /> */}
       {/* <PropDrilling /> */}
-      <UseContext />
-      {/* <UseRef /> */}
+      {/* <UseContext /> */}
+      <UseRef />
     </>
   );
 }
