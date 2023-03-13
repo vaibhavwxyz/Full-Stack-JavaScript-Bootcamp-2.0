@@ -8,7 +8,8 @@ import UseEffect2 from "./components/02- useEffect/UseEffect2";
 import UseEffect3 from "./components/02- useEffect/UseEffect3";
 import PropDrilling from "./components/03- useContext/prop-drilling/PropDrilling";
 import UseContext from "./components/03- useContext/useContext/UseContext";
-import UseRef from "./components/04- useRef/UseRef";
+import UseRef from "./components/04- useRef/UseRef1";
+import UseRef2 from "./components/04- useRef/UseRef2";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       {/* <UseEffect3 /> */}
       {/* <PropDrilling /> */}
       {/* <UseContext /> */}
-      <UseRef />
+      {/* <UseRef /> */}
+      <UseRef2 />
     </>
   );
 }
