@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 const UseRef2 = () => {
   let [name, setName] = useState("vaibhav");
+  const refElement = useRef("");
 
   function resetName() {
     setName((name = ""));
@@ -9,12 +10,8 @@ const UseRef2 = () => {
   return (
     <>
       <h1>Hello, {name}</h1>
-      <input type="text" />
-      <button
-        style={{ margin: "2px" }}
-        onClick={resetName}
-        onChange={(e) => setName(e.target.value)}
-      >
+      <input type="text" onChange={(e) => setName(e.target.value)} />
+      <button style={{ margin: "2px" }} value={name} onClick={resetName}>
         reset
       </button>
     </>
