@@ -10,6 +10,7 @@ import PropDrilling from "./components/03- useContext/prop-drilling/PropDrilling
 import UseContext from "./components/03- useContext/useContext/UseContext";
 import UseRef from "./components/04- useRef/UseRef1";
 import UseRef2 from "./components/04- useRef/UseRef2";
+import UseReducer1 from "./components/05- useReducer/UseReducer1";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <PropDrilling /> */}
       {/* <UseContext /> */}
       {/* <UseRef /> */}
-      <UseRef2 />
+      {/* <UseRef2 /> */}
+      <UseReducer1 />
     </>
   );
 }

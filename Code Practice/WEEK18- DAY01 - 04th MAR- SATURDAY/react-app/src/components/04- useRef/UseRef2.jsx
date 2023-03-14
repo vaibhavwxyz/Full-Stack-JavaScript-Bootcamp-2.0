@@ -7,6 +7,7 @@ const UseRef2 = () => {
   function resetName() {
     setName((name = ""));
     refElement.current.focus();
+    refElement.current.style.color = "red";
   }
   return (
     <>
