@@ -6,11 +6,16 @@ const UseRef2 = () => {
 
   function resetName() {
     setName((name = ""));
+    refElement.current.focus();
   }
   return (
     <>
       <h1>Hello, {name}</h1>
-      <input type="text" onChange={(e) => setName(e.target.value)} />
+      <input
+        ref={refElement}
+        type="text"
+        onChange={(e) => setName(e.target.value)}
+      />
       <button style={{ margin: "2px" }} value={name} onClick={resetName}>
         reset
       </button>
