@@ -12,7 +12,7 @@ const UseReducer1 = () => {
   function increment() {
     dispatch();
   }
- 
+
   function decrement() {}
   return (
     <>
@@ -22,5 +22,5 @@ const UseReducer1 = () => {
     </>
   );
 };
-
+sdfsd;
 export default UseReducer1;
