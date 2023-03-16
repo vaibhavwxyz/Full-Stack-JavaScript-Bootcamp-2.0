@@ -12,7 +12,7 @@ const UseReducer1 = () => {
   function increment() {
     dispatch();
   }
-
+ 
   function decrement() {}
   return (
     <>
