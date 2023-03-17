@@ -22,5 +22,5 @@ const UseReducer1 = () => {
     </>
   );
 };
-sdfsd;
+
 export default UseReducer1;

@@ -11,6 +11,7 @@ import UseContext from "./components/03- useContext/useContext/UseContext";
 import UseRef from "./components/04- useRef/UseRef1";
 import UseRef2 from "./components/04- useRef/UseRef2";
 import UseReducer1 from "./components/05- useReducer/UseReducer1";
+import UseReducer2 from "./components/05- useReducer/UseReducer2";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <UseContext /> */}
       {/* <UseRef /> */}
       {/* <UseRef2 /> */}
-      <UseReducer1 />
+      {/* <UseReducer1 /> */}
+      <UseReducer2 />
     </>
   );
 }
