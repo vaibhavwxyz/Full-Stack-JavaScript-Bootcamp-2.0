@@ -1,9 +1,23 @@
 import { useState, useEffect } from "react";
 import "./index.css";
 
+const getLocalListData = () => {
+  let list = localStorage.getItem("todo");
+
+  if (list) {
+    return JSON.parse(localStorage.getItem("todo"));
+  } else {
+    return [];
+  }
+};
+
 function App() {
   const [task, setTask] = useState("");
-  const [listData, setListData] = useState();
+  const [listData, setListData] = useState(getLocalListData());
+
+  useEffect(() => {
+    localStorage.setItem("todo", JSON.stringify(listData));
+  }, [listData]);
 
   function addTask() {
     // setListData(...listData, task);
