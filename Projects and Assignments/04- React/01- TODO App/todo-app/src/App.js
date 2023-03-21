@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 
 function App() {
   const [task, setTask] = useState("");
-  const [listData, setListData] = useState([]);
+  const [listData, setListData] = useState();
 
   function addTask() {
     // setListData(...listData, task);
     // console.log(listData); // this will might cause problem because in react it will work asychronically.
-    setListData((listData) => {
-      const updateList = [...listData, task];
-      // console.log(updateList);
-      setTask("");
-      return updateList;
-    });
+    if (task.length > 0) {
+      setListData((listData) => {
+        const updateList = [...listData, task];
+        // console.log(updateList);
+        setTask("");
+        return updateList;
+      });
+    }
   }
 
   function removeTask(i) {
@@ -29,7 +31,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col mt-20 items-center space-y-5">
+      <div className="flex max-w-2xl mx-auto flex-col mt-20 items-center space-y-5">
         <div className="text-3xl font-bold text-center text-[#fefefe]">
           TODO LIST
         </div>
@@ -49,22 +51,32 @@ function App() {
           </button>
         </div>
 
-        <p className="list-heading">Here is you list</p>
+        <p className="text-white">Here is you list</p>
         {listData != [] &&
           listData.map((data, i) => {
             return (
               <>
-                <p key={i} className="flex justify-center items-center gap-2">
-                  <div className="text-white">{data}</div>
-                  <button className="remove" onClick={() => removeTask(i)}>
-                    remove
+                <p key={i} className="flex justify-center items-start gap-2">
+                  <div className="w-[42rem] text-left text-white bg-[#e3e3e3] inline-flex items-center rounded-md text-sm font-medium transition-colors bg-[#515151] hover:bg-[#434343] hover:cursor-default py-2 px-4 min-h-[2.5rem]">
+                    {data}
+                  </div>
+                  <button
+                    className="text-white active:scale-95 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-1 bg-[#e44f54] focus:ring-indigo-400 focus:ring-offset-1 dark:hover:bg-[#d03237] dark:hover:text-gray-100 disabled:opacity-50 dark:focus:ring-indigo-400 disabled:pointer-events-none dark:focus:ring-offset-gray-900 dark:bg-[#e44f54] text-white hover:bg-[#d03237] h-10 py-2 px-4"
+                    onClick={() => removeTask(i)}
+                  >
+                    Remove
                   </button>
                 </p>
               </>
             );
           })}
         {listData.length >= 1 && (
-          <button onClick={removeAll}>Remove All</button>
+          <button
+            onClick={removeAll}
+            className="text-white active:scale-95 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-1 bg-[#ef767a] focus:ring-indigo-400 focus:ring-offset-1 dark:hover:bg-[#d03237] dark:hover:text-gray-100 disabled:opacity-50 dark:focus:ring-indigo-400 disabled:pointer-events-none dark:focus:ring-offset-gray-900 dark:bg-[#e44f54] text-white hover:bg-[#d03237] h-10 py-2 px-4"
+          >
+            Remove All
+          </button>
         )}
       </div>
     </>

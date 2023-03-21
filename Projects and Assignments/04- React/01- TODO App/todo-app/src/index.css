@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
   background: linear-gradient(
     to right bottom,
     rgb(55, 65, 81),
@@ -10,6 +10,7 @@ body {
     rgb(0, 0, 0)
   );
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Poppins", sans-serif;
 }
