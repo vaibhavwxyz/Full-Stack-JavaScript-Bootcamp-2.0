@@ -1,4 +1,3 @@
-import { isEditable } from "@testing-library/user-event/dist/utils";
 import { useState, useEffect } from "react";
 import "./index.css";
 
@@ -64,7 +63,7 @@ function App() {
 
   function removeTask(i) {
     const updateListData = listData.filter((elem, id) => {
-      return i != id;
+      return i !== id;
     });
     setListData(updateListData);
   }
@@ -105,12 +104,12 @@ function App() {
         </div>
 
         <p className="text-white">Here is you list</p>
-        {listData != [] &&
+        {listData !== [] &&
           listData.map((data, i) => {
             return (
               <>
                 <p key={i} className="flex justify-center items-start gap-2">
-                  <div className="w-[32rem] text-left text-white inline-flex items-center rounded-md text-sm font-medium transition-colors bg-[#515151] hover:bg-[#434343] hover:cursor-default py-2 px-4 min-h-[2.5rem]">
+                  <div className="w-[14rem] sm:w-[15rem] md:w-[20rem] xl:w-[24rem] 2xl:w-[32rem] text-left text-white inline-flex items-center rounded-md text-sm font-medium transition-colors bg-[#515151] hover:bg-[#434343] hover:cursor-default py-2 px-4 min-h-[2.5rem]">
                     {data}
                   </div>
                   <button
