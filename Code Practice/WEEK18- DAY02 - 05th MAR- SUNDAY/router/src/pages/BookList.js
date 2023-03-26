@@ -6,6 +6,7 @@ export function BookList() {
     <>
       <h1>BookList</h1>
       <Link to="/book/1">Book 1</Link>
+      <br></br>
       <Link to="/book/2">Book 2</Link>
     </>
   );
