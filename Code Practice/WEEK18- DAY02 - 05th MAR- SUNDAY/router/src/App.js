@@ -28,8 +28,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Book" element={<BookList />} />
-        <Route path="/Book/:id" element={<Book />} />
+        {/* <Route path="/Book" element={<BookList />} />
+        <Route path="/Book/:id" element={<Book />} /> */}
+        // Nested Routes
+        <Route path="/book">
+          <Route path=":id" element={<Book />} />
+        </Route>
       </Routes>
     </>
   );
