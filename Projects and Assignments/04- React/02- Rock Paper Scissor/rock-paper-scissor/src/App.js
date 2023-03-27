@@ -46,7 +46,10 @@ function App() {
           </div>
         </div>
         {/* lock your choice */}
-        <div></div>
+        <div>
+          <h3 className="text-center">Lock Your Choice</h3>
+          <img src={`../`} alt="" />
+        </div>
       </div>
     </>
   );
