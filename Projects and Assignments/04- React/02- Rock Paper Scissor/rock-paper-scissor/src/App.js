@@ -36,11 +36,11 @@ function App() {
   };
 
   const reset = () => {
-    setUserChoice("rock");
-    setComputerChoice("paper");
+    setUserChoice("");
+    setComputerChoice("");
     setUserScore(0);
     setComputerScore(0);
-    setResult("Play");
+    setResult("Let's Play");
   };
 
   const rules = () => {
@@ -67,7 +67,7 @@ function App() {
 
   return (
     <>
-      <div className="p-5 space-y-12 text-white">
+      <div className="p-5 space-y-12 text-white max-w-xl mx-auto">
         {/* tittle */}
         <div>
           <h1 className="mx-auto text-center text-2xl mb-2">
@@ -97,22 +97,38 @@ function App() {
           <div className="flex flex-col items-center gap-2">
             <h3>Your choice</h3>
             <div className="rounded-full w-fit p-5 hover:bg-[#374151] bg-[#111827]">
-              <img
-                src={`../assets/${userChoice}.png`}
-                alt="user-choice"
-                className="w-10 sm:w-16"
-              />
+              {userChoice ? (
+                <img
+                  src={`../assets/${userChoice}.png`}
+                  alt="user-choice"
+                  className="w-10 sm:w-16"
+                />
+              ) : (
+                <img
+                  src="./assets/rock.png"
+                  alt="user-choice"
+                  className="w-10 sm:w-16"
+                />
+              )}
             </div>
           </div>
           {/* computer choice */}
           <div className="flex flex-col items-center gap-2">
             <h3>computer Choice</h3>
             <div className="rounded-full w-fit p-5 hover:bg-[#374151] bg-[#111827]">
-              <img
-                src={`../assets/${computerChoice}.png`}
-                alt="computer-choice"
-                className="w-10 sm:w-16"
-              />
+              {computerChoice ? (
+                <img
+                  src={`../assets/${computerChoice}.png`}
+                  alt="computer-choice"
+                  className="w-10 sm:w-16"
+                />
+              ) : (
+                <img
+                  src="./assets/rock.png"
+                  alt="computer-choice"
+                  className="w-10 sm:w-16"
+                />
+              )}
             </div>
           </div>
         </div>
