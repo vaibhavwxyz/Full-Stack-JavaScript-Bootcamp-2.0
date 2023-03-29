@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./index.css";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
   const [computerChoice, setComputerChoice] = useState("rock");
   const [userScore, setUserScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
-  const [result, setResult] = useState("Let's Play");
+  const [result, setResult] = useState("Let's Play!!");
   const [gameStart, setGameStart] = useState(false);
 
   const computerSelect = () => {
@@ -40,7 +39,7 @@ function App() {
     setComputerChoice("");
     setUserScore(0);
     setComputerScore(0);
-    setResult("Let's Play");
+    setResult("Let's Play!!");
   };
 
   const rules = () => {
@@ -61,9 +60,8 @@ function App() {
 
   useEffect(() => {
     if (gameStart) rules();
+    // eslint-disable-next-line
   }, [userChoice, computerChoice]);
-
-  // const reset = () => window.location.reload();
 
   return (
     <>
