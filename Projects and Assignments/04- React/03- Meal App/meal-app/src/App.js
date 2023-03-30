@@ -1,8 +1,10 @@
+import Main from "./componets/Main";
+
 function App() {
   return (
-    <div className="">
-      <h1>Hello, Vaibhav</h1>
-    </div>
+    <>
+      <Main />
+    </>
   );
 }
 

@@ -3,8 +3,10 @@ function Nav() {
     <nav className="nav-container">
       <div className="logo-wrapper"></div>
       <div className="btn-wrapper">
-        <button className="login"></button>
+        <button className="login">login</button>
       </div>
     </nav>
   );
 }
+
+export default Nav;
