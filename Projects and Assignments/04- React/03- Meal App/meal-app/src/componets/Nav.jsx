@@ -7,7 +7,8 @@ function Nav() {
       <div className="logo-wrapper"></div>
       <div className="btn-wrapper">
         <button className="login">
-          <FontAwesomeIcon icon={faUtensils} /> login
+          <FontAwesomeIcon icon={faUtensils} className="" />
+          Meal.db
         </button>
       </div>
     </nav>
