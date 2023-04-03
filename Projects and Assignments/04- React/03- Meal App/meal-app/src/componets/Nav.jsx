@@ -9,7 +9,7 @@ function Nav() {
         <FontAwesomeIcon icon={faUtensils} className="mr-2" />
         Meal.db
       </div>
-      <Button />
+      <Button data="Login" />
     </nav>
   );
 }
