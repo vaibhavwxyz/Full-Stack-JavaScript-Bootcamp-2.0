@@ -3,7 +3,7 @@ import MealCard from "./MealCard";
 
 const Section = ({ recipes }) => {
   return (
-    <div>
+    <div style={{ display: "flex" }}>
       {recipes.map((recipe, idx) => {
         return <MealCard key={idx} recipe={recipe} />;
       })}
