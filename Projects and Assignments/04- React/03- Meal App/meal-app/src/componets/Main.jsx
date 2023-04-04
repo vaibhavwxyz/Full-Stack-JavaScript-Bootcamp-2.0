@@ -14,10 +14,10 @@ function Main() {
   }, []);
 
   return (
-    <>
+    <div className="max-w-6xl mx-auto">
       <Nav />
       <Section recipes={recipes} />
-    </>
+    </div>
   );
 }
 

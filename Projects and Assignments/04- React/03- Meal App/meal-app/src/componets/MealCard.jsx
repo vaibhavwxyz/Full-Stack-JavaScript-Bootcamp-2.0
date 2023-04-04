@@ -9,9 +9,9 @@ import Typography from "@mui/material/Typography";
 export default function MealCard({ recipe }) {
   console.log(recipe);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="active:scale-[0.99] transition-all ease-in-out sm:hover:drop-shadow-xl sm:cursor-pointer">
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 175 }}
         image={recipe.strMealThumb}
         title="green iguana"
       />
