@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import fetchMealItems from "../api/api";
 import Nav from "./Nav";
 import Section from "./Section";
+import SearchBar from "./SearchBar";
 
 function Main() {
   const [recipes, setRecipes] = useState([]);
@@ -16,6 +17,7 @@ function Main() {
   return (
     <div className="max-w-6xl mx-auto">
       <Nav />
+      <SearchBar />
       <Section recipes={recipes} />
     </div>
   );
