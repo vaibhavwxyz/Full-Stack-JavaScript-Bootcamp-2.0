@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
 export default function MealCard({ recipe }) {
-  console.log(recipe);
+  // console.log(recipe);
   return (
     <Card className="active:scale-[0.99] transition-all ease-in-out sm:hover:drop-shadow-xl sm:cursor-pointer">
       <CardMedia

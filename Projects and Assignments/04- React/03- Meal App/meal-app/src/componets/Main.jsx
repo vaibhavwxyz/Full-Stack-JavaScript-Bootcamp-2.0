@@ -9,7 +9,7 @@ function Main() {
 
   useEffect(() => {
     const data = fetchMealItems().then((data) => {
-      console.log(data);
+      // console.log(data);
       setRecipes(data.meals);
     });
   }, []);
@@ -17,7 +17,7 @@ function Main() {
   return (
     <div className="max-w-6xl mx-auto">
       <Nav />
-      <SearchBar />
+      <SearchBar recipes={recipes} setRecipes={setRecipes} />
       <Section recipes={recipes} />
     </div>
   );
