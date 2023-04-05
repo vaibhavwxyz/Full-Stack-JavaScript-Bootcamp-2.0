@@ -7,9 +7,11 @@ const SearchBar = () => {
       <input
         type="text"
         placeholder="Search any recipe"
-        className="bg-[#fee5e5] text-[#ef4f5f] placeholder:text-[#ef4f5f] px-1 rounded-full outline-none text-lg w-full text-start"
+        className="bg-[#fee5e5] text-[#ef4f5f] placeholder:text-[#ef4f5f] px-1 rounded-full outline-none text-lg w-full"
       />
-      <FontAwesomeIcon icon={faSearch} />
+      <button>
+        <FontAwesomeIcon icon={faSearch} />
+      </button>
     </form>
   );
 };
