@@ -23,3 +23,5 @@ const getSpacecrafts = async () => {
   const jsonSpacecraftsData = await response.json();
   console.log(jsonSpacecraftsData);
 };
+
+getSpacecrafts();
