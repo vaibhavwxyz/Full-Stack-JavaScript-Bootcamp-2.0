@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/users").then((resopnse) => {
-      console.log(resopnse);
+      // console.log(resopnse);
       setData(resopnse.data);
     }, []);
   });
