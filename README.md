@@ -66,7 +66,7 @@
 | 6   | Beats Landing Page          | [Live Link](https://fsjs2-tailwind-project-06.netlify.app) | [Click Here](./Projects%20and%20Assignments/02-%20TailWind%20CSS/Project%2006-%20Beats%20Landing%20Page/)                            | 10th & 11th December |
 | 7   | Data Analytics Landing Page | [Live Link](https://fsjs2-tailwind-project-07.netlify.app) | [Click Here](./Projects%20and%20Assignments/02-%20TailWind%20CSS/Project%2007-%20Data%20Analytics%20Landing%20Page/)                 | 10th & 11th December |
 
-## <img height="20px" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"><img height="20px" src="https://user-images.githubusercontent.com/110087385/210600757-c5cd4168-1913-4cb9-8c09-1d43f9a7565b.png"> HTML and CSS Projects of 20th Nov
+## <img height="20px" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png"><img height="20px" src="https://user-images.githubusercontent.com/110087385/210600757-c5cd4168-1913-4cb9-8c09-1d43f9a7565b.png"> HTML and CSS Projects
 
 | No. | **Project Name** | **Project Live Link**                                 | **Project Folder**                                                                                                                                  | **Assignment Date** |
 | --- | ---------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
