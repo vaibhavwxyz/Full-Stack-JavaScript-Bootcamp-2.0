@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import "./App.css";
 import { Progress } from "antd";
+import SearchIcon from "@mui/icons-material/Search";
+import Header from "./Components/Header";
 
 function App() {
   const [pokemonName, setPokemonName] = useState("");
@@ -23,6 +25,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <h1>Pokémon Stats</h1>
       <input type="text" onChange={(e) => setPokemonName(e.target.value)} />
       <button onClick={searchPokemon}>Search</button>
@@ -36,6 +39,7 @@ function App() {
         <Progress percent={70} size="small" status="exception" />
         <Progress percent={100} size="small" />
       </div>
+      <SearchIcon />
     </div>
   );
 }
