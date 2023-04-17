@@ -22,7 +22,7 @@ export default function Index() {
   };
 
   return (
-    <div className="flex flex-col gap-5 md:flex-row items-center justify-between max-w-6xl mx-auto px-5 py-16">
+    <div className="flex flex-col gap-5 md:flex-row items-center justify-between lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl mx-auto px-5 py-16">
       <img src={Logo} alt="logo" className="md:w-[25%] w-48" />
       <div className="flex items-center space-x-2">
         <input
