@@ -1,10 +1,7 @@
 import logo from "../assets/logo.png";
-import { SEARCH_MOVIE_URL } from "../constant/URL";
 import WithButtonInput from "./WithButtonInput";
 
 const Header = () => {
-  const key = SEARCH_MOVIE_URL;
-  console.log(key);
   return (
     <div className="px-48 py-2 flex bg-black justify-between items-center">
       <div className="flex gap-10 items-center">
