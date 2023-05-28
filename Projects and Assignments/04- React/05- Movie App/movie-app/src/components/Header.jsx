@@ -21,9 +21,6 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <WithButtonInput />
-      </div>
     </div>
   );
 };
