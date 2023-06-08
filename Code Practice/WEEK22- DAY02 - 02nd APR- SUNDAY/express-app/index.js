@@ -7,7 +7,6 @@ app.get("/", (req, res) => {
 });
 
 app.get("/insta", (req, res) => {
-  // res.send("<h1>Hello World!</h1>");
   const insta = {
     username: "vaibhavwxzy",
     follower: 18,
