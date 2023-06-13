@@ -1,4 +1,6 @@
 const fs = require("fs");
+const os = require("os");
+
 
 // fs.writeFileSync("./text.txt", "Hey There Vaibhav Shinde")
 // fs.writeFile("./address.txt", "Xrbia Township", err => {
@@ -18,4 +20,4 @@ fs.readFile("./address.txt", "utf-8", (err, result) => {
   }
 })
 
-fs.appendFileSync("./text.txt", new Date().getDate().toLocaleString())
+fs.appendFileSync("./text.txt", Date.now())
