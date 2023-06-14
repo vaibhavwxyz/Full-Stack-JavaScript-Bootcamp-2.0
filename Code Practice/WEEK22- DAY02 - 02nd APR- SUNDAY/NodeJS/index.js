@@ -3,7 +3,7 @@
 // console.log(math);
 
 // const http = require("http")
-// const fs = require("fs");
+const fs = require("fs");
 
 // const myServer = http.createServer((req, res) => {
 //   const log = `${new Date().getDate().toLocaleString()}: ${req.url} New Req Received\n`;
@@ -42,6 +42,14 @@ const users = require("./MOCK_DATA.json")
 const app = express()
 const PORT = 8000
 
+app.use(express.urlencoded({extended: false}))
+
+app.use((req, res, next) => {
+  fs.appendFile("log.txt", `\n${Date.now()}: ${req.method}: ${req.path}`, (err, data) => {
+    next()
+  })
+})
+
 // ROUTES
 // app.get("/api/users", (req, res) => { //api
 //   return res.json(users)
@@ -71,6 +79,17 @@ app.route("/api/users/:id")
     return res.json({status: "pending"})
   })
 
+app.route("/api/users")
+  .get((req, res) => {
+    return res.json(users)
+  })
+  .post((req, res) => {
+    const body = req.body
+    users.push({...body, id: users.length + 1})
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+      return res.json({status: "success", id: users.length})
+    })
+  })
 
 // Listen
 app.listen(PORT, () => console.log(`Server Started at ${PORT}`))

@@ -14,3 +14,8 @@
 1686587469651: /favicon.ico New Req Received
 1686587484286: /career New Req Received
 1686587484447: /favicon.ico New Req Received
+1686743570086: GET: /users1686743603791: 
+POST: /api/users
+1686743701979: POST: /api/users
+1686743704171: POST: /api/users
+1686743708554: GET: /users
