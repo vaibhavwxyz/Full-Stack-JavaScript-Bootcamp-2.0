@@ -50,6 +50,11 @@ app.use((req, res, next) => {
   })
 })
 
+app.use((req, res, next) => {
+  res.setHeader("X-fName", "Vaibhav")
+  next()
+})
+
 // ROUTES
 // app.get("/api/users", (req, res) => { //api
 //   return res.json(users)
@@ -85,6 +90,9 @@ app.route("/api/users")
   })
   .post((req, res) => {
     const body = req.body
+    if(!body || !body.first_name || !body.last_name || !body.email || !body.gender || !body.job_title){
+      return res.status(400).json({msg: 'All field required'})
+    }
     users.push({...body, id: users.length + 1})
     fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
       return res.json({status: "success", id: users.length})
