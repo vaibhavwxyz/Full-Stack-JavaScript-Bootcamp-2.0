@@ -71,7 +71,7 @@ const User = mongoose.model("user", userSchema);
 
 // Getting and Initializing
 const express = require("express");
-const users = require("./MOCK_DATA.json");
+// const users = require("./MOCK_DATA.json");
 const app = express();
 const PORT = 8000;
 
@@ -97,10 +97,14 @@ app.use((req, res, next) => {
 //   return res.json(users)
 // })
 
-app.get("/users", (req, res) => {
+app.get("/users", async (req, res) => {
+  const allDbUsers = await User.find({});
   //server side rendering
-  const html = `<ul>${users
-    .map((user) => `<li>${user.first_name}</li>`)
+  // const html = `<ul>${users
+  //   .map((user) => `<li>${user.first_name}</li>`)
+  //   .join("")}</ul>`;
+  const html = `<ul>${allDbUsers
+    .map((user) => `<li>${user.firstName} - ${user.email}</li>`)
     .join("")}</ul>`;
   return res.send(html);
 });
@@ -113,22 +117,28 @@ app.get("/users", (req, res) => {
 
 app
   .route("/api/users/:id")
-  .get((req, res) => {
-    const id = Number(req.params.id);
-    const user = users.find((user) => user.id === id);
+  .get(async (req, res) => {
+    // const id = Number(req.params.id);
+    // const user = users.find((user) => user.id === id);
+    const user = await User.findById(req.params.id);
+    if (!user) return res.status(404).json({ error: "User Not Found" });
     return res.json(user);
   })
-  .patch((req, res) => {
-    return res.json({ status: "pending" });
+  .patch(async (req, res) => {
+    const body = req.body;
+    await User.findByIdAndUpdate(req.params.id, { jobTitle: body.job_title });
+    return res.json({ status: "Success" });
   })
-  .delete((req, res) => {
-    return res.json({ status: "pending" });
+  .delete(async (req, res) => {
+    await User.findByIdAndDelete(req.params.id);
+    return res.json({ status: "Success" });
   });
 
 app
   .route("/api/users")
-  .get((req, res) => {
-    return res.json(users);
+  .get(async (req, res) => {
+    const allDbUsers = await User.find({});
+    return res.json(allDbUsers);
   })
   .post(async (req, res) => {
     const body = req.body;
@@ -155,7 +165,7 @@ app
       jobTitle: body.job_title,
     });
 
-    console.log("result", result);
+    // console.log("result", result);
 
     return res.status(201).json({ msg: "Success" });
   });
