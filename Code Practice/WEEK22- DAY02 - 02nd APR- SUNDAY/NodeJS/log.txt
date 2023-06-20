@@ -42,3 +42,8 @@ POST: /api/users
 1686821435410: GET: /api/users/202
 1686821440676: GET: /api/users/111
 1686821447067: GET: /users
+1687260983954: POST: /api/users
+1687261073474: POST: /api/users
+1687270075914: POST: /api/users
+1687270121981: POST: /api/users
+1687270159089: POST: /api/users

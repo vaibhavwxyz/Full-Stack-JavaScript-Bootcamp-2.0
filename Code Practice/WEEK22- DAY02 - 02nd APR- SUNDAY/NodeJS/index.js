@@ -4,29 +4,40 @@
 
 // const http = require("http")
 const fs = require("fs");
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+
+// connection
+mongoose
+  .connect("mongodb://127.0.0.1:27017/youtube-app-1")
+  .then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.log("MongoDB Error"));
 
 // Schema
-const userSchema = new mongoose.Schema({
-  firstName: {
-    type: String,
-    required: true
+const userSchema = new mongoose.Schema(
+  {
+    firstName: {
+      type: String,
+      required: true,
+    },
+    lastName: {
+      type: String,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    gender: {
+      type: String,
+    },
+    jobTitle: {
+      type: String,
+    },
   },
-  lastName: {
-    type: String
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  gender: {
-    type: String
-  },
-  jobTitle: {
-    type: String
-  }
-})
+  { timestamps: true }
+);
+
+const User = mongoose.model("user", userSchema);
 
 // const myServer = http.createServer((req, res) => {
 //   const log = `${new Date().getDate().toLocaleString()}: ${req.url} New Req Received\n`;
@@ -44,11 +55,10 @@ const userSchema = new mongoose.Schema({
 //   fs.appendFile("log.txt", log, (err, data) => {
 //     res.end("Hello from Server")
 //   })
-  
+
 // })
 
 // myServer.listen(8000, () => console.log("Server Started"))
-
 
 // const myServer = http.createServer((req, res) => {
 //   const log = `${Date.now()}: ${req.url} New Req Received\n`;
@@ -60,33 +70,40 @@ const userSchema = new mongoose.Schema({
 // myServer.listen(8000, () => console.log("Server Started"))
 
 // Getting and Initializing
-const express = require("express")
-const users = require("./MOCK_DATA.json")
-const app = express()
-const PORT = 8000
+const express = require("express");
+const users = require("./MOCK_DATA.json");
+const app = express();
+const PORT = 8000;
 
-app.use(express.urlencoded({extended: false}))
-
-app.use((req, res, next) => {
-  fs.appendFile("log.txt", `\n${Date.now()}: ${req.method}: ${req.path}`, (err, data) => {
-    next()
-  })
-})
+app.use(express.urlencoded({ extended: false }));
 
 app.use((req, res, next) => {
-  res.setHeader("X-fName", "Vaibhav")
-  next()
-})
+  fs.appendFile(
+    "log.txt",
+    `\n${Date.now()}: ${req.method}: ${req.path}`,
+    (err, data) => {
+      next();
+    }
+  );
+});
+
+app.use((req, res, next) => {
+  res.setHeader("X-fName", "Vaibhav");
+  next();
+});
 
 // ROUTES
 // app.get("/api/users", (req, res) => { //api
 //   return res.json(users)
 // })
 
-app.get('/users', (req, res) => { //server side rendering
-  const html = `<ul>${users.map((user) => `<li>${user.first_name}</li>`).join("")}</ul>`
-  return res.send(html)
-})
+app.get("/users", (req, res) => {
+  //server side rendering
+  const html = `<ul>${users
+    .map((user) => `<li>${user.first_name}</li>`)
+    .join("")}</ul>`;
+  return res.send(html);
+});
 
 // app.get('/api/users/:id', (req, res) => {
 //   const id = Number(req.params.id);
@@ -94,33 +111,54 @@ app.get('/users', (req, res) => { //server side rendering
 //   return res.json(user)
 // })
 
-app.route("/api/users/:id")
+app
+  .route("/api/users/:id")
   .get((req, res) => {
     const id = Number(req.params.id);
-    const user = users.find((user) => user.id === id)
-    return res.json(user)
+    const user = users.find((user) => user.id === id);
+    return res.json(user);
   })
   .patch((req, res) => {
-    return res.json({status: "pending"})
+    return res.json({ status: "pending" });
   })
   .delete((req, res) => {
-    return res.json({status: "pending"})
-  })
+    return res.json({ status: "pending" });
+  });
 
-app.route("/api/users")
+app
+  .route("/api/users")
   .get((req, res) => {
-    return res.json(users)
+    return res.json(users);
   })
-  .post((req, res) => {
-    const body = req.body
-    if(!body || !body.first_name || !body.last_name || !body.email || !body.gender || !body.job_title){
-      return res.status(400).json({msg: 'All field required'})
+  .post(async (req, res) => {
+    const body = req.body;
+    if (
+      !body ||
+      !body.first_name ||
+      !body.last_name ||
+      !body.email ||
+      !body.gender ||
+      !body.job_title
+    ) {
+      return res.status(400).json({ msg: "All field required" });
     }
-    users.push({...body, id: users.length + 1})
-    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
-      return res.json({status: "success", id: users.length})
-    })
-  })
+    // users.push({ ...body, id: users.length + 1 });
+    // fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+    //   return res.json({ status: "success", id: users.length });
+    // });
+
+    const result = await User.create({
+      firstName: body.first_name,
+      lastName: body.last_name,
+      email: body.email,
+      gender: body.gender,
+      jobTitle: body.job_title,
+    });
+
+    console.log("result", result);
+
+    return res.status(201).json({ msg: "Success" });
+  });
 
 // Listen
-app.listen(PORT, () => console.log(`Server Started at ${PORT}`))
+app.listen(PORT, () => console.log(`Server Started at ${PORT}`));
