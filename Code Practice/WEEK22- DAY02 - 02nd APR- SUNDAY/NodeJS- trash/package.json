@@ -9,6 +9,7 @@
   "author": "vaibhav",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "url": "^0.11.1"
   }
 }
