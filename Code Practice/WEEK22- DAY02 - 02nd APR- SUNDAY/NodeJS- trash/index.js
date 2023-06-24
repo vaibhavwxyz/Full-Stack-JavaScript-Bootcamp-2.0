@@ -20,7 +20,7 @@ const url = require("url");
 
 const myServer = http.createServer((req, res) => {
   const log = `${Date.now()}: ${req.url} New Req Received\n`;
-  const myUrl = url.parse(req.url, true);
+  const myUrl = url.parse(res.url, true);
 
   fs.appendFile("log.txt", log, () => {
     switch (req.url) {
