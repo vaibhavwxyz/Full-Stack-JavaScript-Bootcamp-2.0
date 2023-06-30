@@ -67,26 +67,39 @@ app.use(express.urlencoded({ extended: false }));
 //   return res.end(`Hello ${req.query.name}`);
 // });
 
-app.get("/", (req, res) => {
-  const html = `<ul>${users
-    .map((user) => `<li>${user.first_name}</li>`)
+app.get("/", async (req, res) => {
+  const allDbUsers = await User.find({});
+  const html = `<ul>${allDbUsers
+    .map((user) => `<li>${user.firstName}</li>`)
     .join("")}</ul>`;
   res.send(html);
 });
 
-app.get("/api/users", (req, res) => {
-  return res.json(users);
+app.get("/api/users", async (req, res) => {
+  const allDbUsers = await User.find({});
+  return res.json(allDbUsers);
 });
 
-app.get("/api/users/:id", (req, res) => {
-  const id = Number(req.params.id);
-  const filteredUser = users.find((user) => user.id === id);
-  if (!filteredUser)
-    return res.status(404).json({ error: "User Not Found 404" });
-  return res.json(filteredUser);
-});
+app
+  .route("/api/users/:id")
+  .get(async (req, res) => {
+    // const id = Number(req.params.id);
+    // const filteredUser = users.find((user) => user.id === id);
+    const filteredUser = await User.findById(req.params.id);
+    if (!filteredUser)
+      return res.status(404).json({ error: "User Not Found 404" });
+    return res.json(filteredUser);
+  })
+  .patch(async (req, res) => {
+    await User.findByIdAndUpdate(req.params.id, { gender: "female" });
+    return res.json({ status: "Success" });
+  })
+  .delete(async (req, res) => {
+    await User.findByIdAndDelete(req.params.id);
+    return res.json({ status: "Success" });
+  });
 
-app.post("/api/users", (req, res) => {
+app.post("/api/users", async (req, res) => {
   const body = req.body;
   if (
     !body ||
@@ -96,12 +109,24 @@ app.post("/api/users", (req, res) => {
     !body.gender ||
     !body.job_title
   ) {
-    return res.json({ msg: "All Field Required" });
+    return res.status(400).json({ msg: "All Field Required" });
   }
-  users.push({ ...body, id: users.length + 1 });
-  fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
-    return res.json({ status: "Success", id: users.length });
+  // users.push({ ...body, id: users.length + 1 });
+  // fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+  //   return res.json({ status: "Success", id: users.length });
+  // });
+
+  const result = await User.create({
+    firstName: body.first_name,
+    lastName: body.last_name,
+    email: body.email,
+    gender: body.gender,
+    jobTitle: body.job_title,
   });
+
+  console.log(result);
+
+  return res.status(201).json({ msg: "Success" });
 });
 
 app.listen(PORT, () => console.log(`Server is Running at ${PORT}`));
